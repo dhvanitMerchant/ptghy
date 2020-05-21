@@ -4,6 +4,10 @@ import './components/App.css'
 import Menu from './components/Menu/Menu';
 import Nav from './components/Navbar/Navbar';
 import About from './components/About/About';
+import Gallaries from './components/Gallaries/Gallaries';
+import Pricing from './components/Pricing/Pricing';
+import Services from './components/Services/Services';
+import Contact from './components/Contact/Contact';
 import SocialLinks from './components/SocialLinks/SocialLinks'
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
@@ -90,6 +94,10 @@ class App extends React.Component {
         <Nav toggleMenu={this.toggleMenu} showMenu={this.state.menuState} />
         <Header />
         <About />
+        <Gallaries />
+        <Pricing />
+        <Services />
+        <Contact />
         <Footer />
       </React.Fragment>
     );
