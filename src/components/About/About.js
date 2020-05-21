@@ -1,21 +1,49 @@
 import React from 'react';
-import styled from 'styled-components'
 
-const Big = styled.div`
-  font-size: 28px;
-  color:red;
-`;
+const About = props => {
+  return (
+    <section id="about">
+      <div className="wrapper container">
+        <article>
+          <div className="title">
+            <h3>Who's this guy?</h3>
+            <p className="separator" />
+          </div>
+          <div className="desc full">
+            <h4 className="subtitle">My name is Krunal Sonagara</h4>
+            <p>
+             Content
+            </p>
+            <p>
+              content
+            </p>
+          </div>
+          <div className="title">
+            <h3>What does he do?</h3>
+            <p className="separator" />
+          </div>
+          <div className="desc">
+            <h4 className="subtitle">I'm a photographer.</h4>
+            <p>
+             content
+            </p>
+            <p>
+              content
+            </p>
+          </div>
+          <div className="desc">
+            <h4 className="subtitle">Also a event.</h4>
+            <p>
+              content
+            </p>
+            <p>
+              content
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  );
+};
 
-export const About = () => {
-return (
-<div className="container">
-    <Big>HELLO</Big>
-    <div className="row">
-    <div className="col s12"><p>s12</p></div>
-    <div className="col s12 m4 l2"><p>s12 m4</p></div>
-    <div className="col s12 m4 l8"><p>s12 m4</p></div>
-    <div className="col s12 m4 l2"><p>s12 m4</p></div>
-  </div>
-</div>
-)
-}
+export default About;
