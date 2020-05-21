@@ -304,16 +304,19 @@ a:active {
 #navbar {
   position: fixed;
   z-index: 9999;
-  width: 100%;
+  width: 115%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-#navbar.bg-active, .band {
-  background:#867979b6;
-  color: white;
+.bg-active {
+  background-color:#867979d8;
+  color: #fff;
 }
 
+.hiddennav {
+  visibility: hidden;
+}
 #navbar .nav-wrapper {
 
   width: 100%;
@@ -512,16 +515,33 @@ margin: 0px;
 }
 
 @media only screen and (max-width: 649px) {
-  #navbar {
-    margin-top: -1em;
+  
+  #navbar{
+    width: 100%;
     
+  }
+  .nav-item{
+    visibility: hidden;
+  }
+  .hiddennav {
+    visibility: visible;
+  }
+  #navbar {
+    margin-top: 0px;
     background-color: transparent;
   }
+  #navbar .nav-wrapper {
+    padding: 0rem;
+  }
   #navbar .brand {
+    display: flex;
+    justify-content: left;
     font-size: 2.6rem;
     color: #4b4343;
     font-style: italic;
     cursor: default;
+    margin-top: 0px;
+    
   
   }
   .color {
@@ -584,7 +604,7 @@ margin: 0px;
 }
 
 #about .wrapper {
-  padding: 15rem 10rem 12rem;
+  padding: 0rem 10rem 12rem;
   height: 100%;
   min-height: 100vh;
   max-width: 1400px;
