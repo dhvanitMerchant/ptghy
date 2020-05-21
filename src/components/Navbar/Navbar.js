@@ -1,27 +1,28 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import './Navbar.css';
-// import styled from 'styled-components'
 
-// const Big = styled.div`
 
-// `;
+/***********************
+  Nav Component
+ ***********************/
 
-export const Navbar = () => {
-return (
-<nav>
-<div className="nav-wrapper container test">
-  <a href="#!" className="brand-logo center">Krunal</a>
-  <ul className="left hide-on-med-and-down test">
-    <li><a href="sass.html">Home</a></li>
-    <li><a href="badges.html">About</a></li>
-  </ul>
-  
-  <ul className="right hide-on-med-and-down">
-    <li><a href="badges.html">Galleries</a></li>
-    <li><a href="badges.html">Contact</a></li>
-  </ul>
+const Nav = props => {
+  return (
+    <React.Fragment>
+      <nav id="navbar">
+        <div className="nav-wrapper">
+          <p className="brand">
+            Kruna
+            <strong>logy</strong>
+          </p>
+          <a onClick={props.toggleMenu} className={props.showMenu === 'active' ? 'menu-button active' : 'menu-button'} >
+            <span />
+          </a>
+        </div>
+      </nav>
+    </React.Fragment>
+  );
+};
 
-</div>
-</nav>
-)
-}
+
+export default Nav;
