@@ -9,11 +9,11 @@ import React from 'react';
 const Nav = props => {
   return (
     <React.Fragment>
-      <nav id="navbar">
+      <nav id="navbar" className="navbardd">
         <div className="nav-wrapper">
           <p className="brand">
-            Kruna
-            <strong>logy</strong>
+            Mom
+            <strong>ents</strong>
           </p>
           <a onClick={props.toggleMenu} className={props.showMenu === 'active' ? 'menu-button active' : 'menu-button'} >
             <span />
