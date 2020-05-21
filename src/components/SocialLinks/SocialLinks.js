@@ -7,26 +7,26 @@ const SocialLinks = props => {
           href="https://twitter.com/Dhvanit24"
           target="_blank"
           rel="noopener noreferrer"
-          title="Link to author's Twitter profile"
+          title="Link to photographer's Twitter profile"
         >
           {' '}
           <i className="fab fa-twitter" />
         </a>
         <a
           id="profile-link"
-          href="https://github.com/200382214"
+          href="https://www.facebook.com/krunal.sonagara"
           target="_blank"
           rel="noopener noreferrer"
-          title="Link to author's GitHub Profile"
+          title="Link to photographer's facebook Profile"
         >
           {' '}
-          <i className="fab fa-github" />
+          <i className="fab fa-facebook" />
         </a>
         <a
           href="https://www.instagram.com/krunal_1516/"
           target="_blank"
           rel="noopener noreferrer"
-          title="Link to author's Codepen Profile"
+          title="Link to photographer's instagram Profile"
         >
           {' '}
           <i className="fab fa-instagram" />

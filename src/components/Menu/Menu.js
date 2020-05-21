@@ -20,7 +20,26 @@ const Menu = props => {
                 ABOUT
               </a>
             </li>
-         
+            <li>
+              <a href="#gallaries" onClick={props.toggleMenu}>
+                GALLARIES
+              </a>
+            </li>
+            <li>
+              <a href="#pricing" onClick={props.toggleMenu}>
+                PRICING
+              </a>
+            </li>
+            <li>
+              <a href="#services" onClick={props.toggleMenu}>
+                SERVICES
+              </a>
+            </li>
+            <li>
+              <a href="#contact" onClick={props.toggleMenu}>
+                CONTACT
+              </a>
+            </li>
           </ul>
           <SocialLinks />
         </div>
