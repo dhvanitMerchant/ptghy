@@ -683,20 +683,30 @@ margin: 0px;
   SERVICES STYLES
  *****************
  *****************/
-
+ #services {
+  height: 100%;
+  min-height: 100vh;
+  font-size: 1.4rem;
+  position: relative;
+  background: #ffffff;
+  clip-path: polygon(0 0, 20% 0, 100% 0, 100% 100%, 80% 95%, 0 100%);
+  z-index: 5;
+  background-attachment: fixed;
+}
  
  .progress {
 	background-color: #d8d8d8;
 	border-radius: 20px;
 	position: relative;
-	margin: 15px 0;
-	height: 30px;
-	width: 300px;
+  /* margin: 15px 0; */
+  margin-bottom: 15px;
+	height: 20px;
+  width: 100%;
 }
 
 .progress-done {
-	background: linear-gradient(to left, #F2709C, #FF9472);
-	box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+	background: linear-gradient(to left, #696969, #A9A9A9);
+	box-shadow: 0 3px 3px -5px #696969, 0 2px 5px #696969;
 	border-radius: 20px;
 	color: #fff;
 	display: flex;
@@ -708,6 +718,22 @@ margin: 0px;
 	transition: 1s ease 0.3s;
 }
 
+.label {
+  font-size: 15pt;
+  font-weight: bold;
+}
+
+.img {
+  position: relative;
+  display: table;
+  width: 450px;
+  height: 500px;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../images/servicephoto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 /***
@@ -736,7 +762,6 @@ footer .wrapper {
   width: 100%;
   padding: 2rem;
   max-width: 1400px;
-  align-items: center;
   justify-content: space-between;
 }
 
