@@ -9,16 +9,54 @@ import React from 'react';
 const Nav = props => {
   return (
     <React.Fragment>
-      <nav id="navbar" className="navbardd">
+      <nav id="navbar" className="navbar navbar-expand-sm">
         <div className="nav-wrapper">
-          <p className="brand">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link" href="#welcome-section">
+                HOME
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#about">
+                ABOUT
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#gallaries">
+                GALLARIES
+              </a>
+            </li>
+            </ul>
+            <a className="brand navbar-brand">
             Mom
             <strong>ents</strong>
-          </p>
+          </a>
+          <ul className="navbar-nav">
+
+            <li className="nav-item">
+              <a className="nav-link" href="#pricing">
+                PRICING
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#services">
+                SERVICES
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#contact" >
+                CONTACT
+              </a>
+            </li>
+          </ul>
+         
+          <div className="hiddennav">     
           <a onClick={props.toggleMenu} className={props.showMenu === 'active' ? 'menu-button active' : 'menu-button'} >
             <span />
           </a>
-        </div>
+          </div>
+        </div> 
       </nav>
     </React.Fragment>
   );
