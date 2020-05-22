@@ -46,7 +46,7 @@ const Footer = props => {
         <div className="row">
           <div className="col-6 mb-4">
             <h3>THANKS FOR VISITING</h3>
-            <p className="text-muted mb-0">© {new Date().getFullYear()} Krunalogy INC</p>
+            <h6 className="text-muted mb-0">© {new Date().getFullYear()} Krunalogy INC</h6>
           </div>
           <div className="col-6 mb-4">
             <SocialLinks />
