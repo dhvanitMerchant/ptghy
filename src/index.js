@@ -44,11 +44,11 @@ const Footer = props => {
       <div className="footer text-center">
         <hr></hr>
         <div className="row">
-          <div className="col-6 mb-4">
+          <div className="col-lg-6 mb-4">
             <h3>THANKS FOR VISITING</h3>
             <h6 className="text-muted mb-0">© {new Date().getFullYear()} Krunalogy INC</h6>
           </div>
-          <div className="col-6 mb-4">
+          <div className="col-lg-6 mb-4">
             <SocialLinks />
           </div>
         </div>
