@@ -6,6 +6,10 @@ const Services = props => {
     <section id="services">
       <div className="wrapper container">
 
+      <div className="title">
+            <h3>Services</h3>
+            <p className="separator" />
+      </div>
         <h1 className="text-center">What we Offer?</h1>
         <div class="row">
           <div class="col-5 mx-auto">
@@ -24,12 +28,6 @@ const Services = props => {
         </div>
       </div>
 
-      <div className="title">
-            <h3>Services</h3>
-            <p className="separator" />
-      </div>
-		<Progress label="Weeding" done="70"/>
-</div>
 
     </section>
   );
