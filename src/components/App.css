@@ -63,8 +63,6 @@ a:active {
   height: calc( 100vh - 120px );
   width: calc( 100% - 120px );
   background: #181d23aa;
-
-  
 }
 
 .menu-container.active > .overlay {
@@ -98,7 +96,6 @@ a:active {
 /***** Menu Layer *****/
 .menu-container {
   position: fixed;
-  
 }
 
 
@@ -539,8 +536,6 @@ margin: 0px;
     font-style: italic;
     cursor: default;
     margin-top: 0px;
-    
-  
   }
   .color {
     color: #fff;
