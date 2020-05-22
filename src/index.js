@@ -42,6 +42,7 @@ const Footer = props => {
   return (
     <footer>
       <div className="footer text-center">
+        <hr></hr>
         <div className="row">
           <div className="col-6 mb-4">
             <h3>THANKS FOR VISITING</h3>
