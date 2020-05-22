@@ -36,15 +36,19 @@ a:active {
   color: #252934;
 }
 
-
-
-
-
-
-
-
-
-
+.wrapper {
+    padding: 3rem 5rem 0rem;
+    height: 100%;
+    min-height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .separator {
+    background: black;
+    width: 150px;
+    height: 2px;
+    padding: 0;
+  }
 /*****************
  *****************
     MENU STYLES
@@ -302,6 +306,7 @@ a:active {
   width: 115%;
   display: flex;
   justify-content: space-evenly;
+  height: 60px;
 }
 
 .bg-active {
@@ -395,7 +400,7 @@ margin: 0px;
  *****************
  *****************/
 
-#welcome-section {
+ #welcome-section {
   
   background: url(https://img.wallpaper.sc/ipad/images/2448x2448/ipad-2448x2448-wallpaper_01484.jpg);
   background-attachment: fixed;
@@ -595,19 +600,10 @@ margin: 0px;
   background-attachment: fixed;
 }
 
-#about .wrapper {
-  padding: 0rem 10rem 0rem;
-  height: 100%;
-  min-height: 100vh;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
 #about article {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
-  padding: 3rem 0;
 }
 
 #about .title {
@@ -622,25 +618,11 @@ margin: 0px;
   font-size: 2.4rem;
 }
 
-#about .separator {
-  background: #4b4343;
-  width: 150px;
-  height: 2px;
-  margin: 1rem 0;
-  padding: 0;
-}
-
 #about .subtitle {
   font-size: 1.6rem;
   text-align: center;
   color: inherit;
   padding-bottom: 1.5rem;
-}
-
-#about p {
-  padding-bottom: 1.5rem;
-  color: #555;
-  line-height: 1.9rem;
 }
 
 #about .desc.full {
@@ -694,6 +676,7 @@ margin: 0px;
   clip-path: polygon(0 0, 20% 0, 100% 0, 100% 100%, 80% 95%, 0 100%);
   z-index: 5;
   background-attachment: fixed;
+  padding-bottom: 5rem;
 }
  
  .progress {
@@ -755,17 +738,7 @@ margin: 0px;
 }
 
 #services .title h3 {
-  color: white;
-
   font-size: 2.4rem;
-}
-
-#services .separator {
-  background: white;
-  width: 150px;
-  height: 2px;
-  margin: 1rem 0;
-  padding: 0;
 }
 
 
@@ -777,36 +750,6 @@ margin: 0px;
  *****************
  *****************/
 
-footer {
-  font-size: 1rem;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 150px;
-  background: #fafafa;
-  z-index: 1;
-}
-
-footer .wrapper {
-  display: flex;
-  width: 100%;
-  padding: 2rem;
-  max-width: 1400px;
-  justify-content: space-between;
-}
-
-@media only screen and (max-width: 649px) {
-  footer .wrapper {
-    flex-direction: column;
-  }
-
-  footer .wrapper h3 {
-    padding-bottom: .8rem;
-  }
-}
 
 
 /*****************
@@ -829,13 +772,9 @@ footer .wrapper {
   z-index: 1;
 }
 
-#contact .container {
-  width: 70%;
-  max-width: 1200px;
-  padding: 25vh 0;
-}
 
-#contact .container .heading-wrapper {
+
+#contact .heading-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -851,6 +790,7 @@ footer .wrapper {
 .heading-wrapper .heading .title {
   font-size: 3rem;
   line-height: 2.4rem;
+  padding-top: 20px;
 }
 
 .heading-wrapper .heading .separator {
@@ -942,50 +882,3 @@ input[type="submit"]:focus {
     padding: 0;
   }
 }
-
-
-#services {
-  height: 100%;
-  min-height: 100vh;
-  font-size: 1.4rem;
-  position: relative;
-  background: #252934;
-  z-index: 5;
-  background-attachment: fixed;
-}
-
-#services .wrapper {
-  padding: 0rem 10rem 2rem;
-  height: 100%;
-  min-height: 100vh;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-#services .title {
-  padding: 2rem;
-  grid-column-end: span 4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#services .title h3 {
-  color: white;
-
-  font-size: 2.4rem;
-}
-
-#services .separator {
-  background: white;
-  width: 150px;
-  height: 2px;
-  margin: 1rem 0;
-  padding: 0;
-}
-
-.label {
-  color: #cfcdcd;
-}
-
-

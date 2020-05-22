@@ -34,13 +34,6 @@ const Header = props => {
   );
 };
 
-
-
-
-
-
-
-
 /***********************
   Footer Component
  ***********************/
@@ -48,10 +41,16 @@ const Header = props => {
 const Footer = props => {
   return (
     <footer>
-      <div className="wrapper">
-        <h3>THANKS FOR VISITING</h3>
-        <p>© {new Date().getFullYear()} Krunalogy INC</p>
-        <SocialLinks />
+      <div className="footer text-center">
+        <div className="row">
+          <div className="col-6 mb-4">
+            <h3>THANKS FOR VISITING</h3>
+            <p className="text-muted mb-0">© {new Date().getFullYear()} Krunalogy INC</p>
+          </div>
+          <div className="col-6 mb-4">
+            <SocialLinks />
+          </div>
+        </div>
       </div>
     </footer>
   );
@@ -125,8 +124,6 @@ class App extends React.Component {
     })();
   }
 }
-
-
 
 ReactDOM.render(
   <div >
