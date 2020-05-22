@@ -1,4 +1,5 @@
 import React from 'react';
+import forest from '../images/camera.svg';
 
 const About = props => {
   return (
@@ -12,6 +13,8 @@ const About = props => {
           <div className="desc full">
             <h4 className="subtitle">My name is Krunal Sonagara</h4>
             <p>
+              <img alt="test" className= "img-thumbnail img-fluid" max-width= "100%" src={forest} />
+          
              Content
             </p>
             <p>

@@ -94,35 +94,10 @@ a:active {
 /***** Menu Layer *****/
 .menu-container {
   position: fixed;
-  height: 120vh;
-  width: 100%;
-  background: #181d23aa;
-  border: 60px solid #000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.menu-container::before,
-.menu-container::after {
   
-  content: '';
-  position: absolute;
-  width: 100%;
-  min-height: 100vh;
-  z-index: -1;
 }
 
-.menu-container::before {
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Trees.svg?sanitize=true) bottom repeat-x;
 
-}
-
-.menu-container::after {
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Trees.svg?sanitize=true) bottom repeat-x;
-}
 
 .menu-container.deactive {
   animation: fade-out 600ms forwards;
@@ -245,6 +220,36 @@ a:active {
 }
 
 @media only screen and (max-width: 649px) {
+  .menu-container {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #202934;
+    border: 60px solid #181d23;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .menu-container::before,
+.menu-container::after {
+  
+  content: '';
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.menu-container::before {
+  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Trees.svg?sanitize=true) bottom repeat-x;
+
+}
+
+.menu-container::after {
+  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Trees.svg?sanitize=true) bottom repeat-x;
+}
   .menu-container {
     border: none;
     width: 100%;
@@ -506,10 +511,7 @@ margin: 0px;
 
 @media only screen and (max-width: 649px) {
   
-  #navbar{
-    width: 100%;
-    
-  }
+
   .nav-item{
     visibility: hidden;
   }
@@ -517,6 +519,7 @@ margin: 0px;
     visibility: visible;
   }
   #navbar {
+    width: 100%;
     margin-top: 0px;
     background-color: transparent;
   }
@@ -588,13 +591,12 @@ margin: 0px;
   font-size: 1.4rem;
   position: relative;
   background: #ffffff;
-  clip-path: polygon(0 0, 20% 0, 100% 0, 100% 100%, 80% 95%, 0 100%);
   z-index: 5;
   background-attachment: fixed;
 }
 
 #about .wrapper {
-  padding: 0rem 10rem 12rem;
+  padding: 0rem 10rem 0rem;
   height: 100%;
   min-height: 100vh;
   max-width: 1400px;
@@ -613,6 +615,7 @@ margin: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
 }
 
 #about .title h3 {
@@ -666,14 +669,13 @@ margin: 0px;
   }
 }
 @media only screen and (max-width: 949px) {
-  #about {
-    clip-path: polygon(0 0, 20% 2%, 100% 0, 100% 100%, 80% 98%, 0 100%);
+  #about #services{
     background-position: top left;
     background-size: cover;
   }
 }
 @media only screen and (max-width: 649px) {
-  #about .wrapper {
+  #about #services .wrapper {
     padding: 10rem 2rem 8rem;
   }
 }
@@ -694,6 +696,14 @@ margin: 0px;
 	width: 300px;
 }
 
+ 
+.progress-label {
+  color: #000;
+	position: relative;
+	margin: 15px 0;
+	height: 30px;
+	width: 300px;
+}
 .progress-done {
 	background: linear-gradient(to left, #F2709C, #FF9472);
 	box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
@@ -749,3 +759,182 @@ footer .wrapper {
     padding-bottom: .8rem;
   }
 }
+
+
+/*****************
+ *****************
+   CONTACT STYLES
+ *****************
+ *****************/
+
+ #contact {
+  background: #181d23 url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/envelope.svg?sanitize=true) no-repeat right;
+  color: #fafafa;
+  min-height: 100vh;
+  width: 100%;
+  padding: 5rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: -100px 0 140px;
+  z-index: 1;
+}
+
+#contact .container {
+  width: 70%;
+  max-width: 1200px;
+  padding: 25vh 0;
+}
+
+#contact .container .heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact .heading-wrapper .social a {
+  color: #fafafa;
+}
+
+#contact .heading-wrapper .social a:hover {
+  color: #00ffff;
+}
+
+.heading-wrapper .heading .title {
+  font-size: 3rem;
+  line-height: 2.4rem;
+}
+
+.heading-wrapper .heading .separator {
+  background: #00ffff;
+  width: 150px;
+  height: 2px;
+  margin: 1rem 0;
+}
+
+.heading-wrapper .heading .subtitle {
+  font-size: 1.4rem;
+}
+
+#contact-form {
+  margin-top: 1rem;
+}
+
+input, textarea {
+  border: none;
+  padding: 1rem;
+  font-family: 'Overlock', Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 40%;
+  transition: 200ms;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="text"]:not(output):not(:focus),
+input[type="email"]:not(output):not(:focus),
+textarea {
+  border-bottom: 1px solid #fafafa;
+  background: transparent;
+  color: #fafafa;
+  font-size: 1.8rem;
+  box-shadow: none;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="text"]:not(output):focus,
+input[type="email"]:not(output):focus,
+textarea:focus {
+  border-bottom: 1px solid #00ffff;
+}
+
+input[type="submit"] {
+  background: #00ffff;
+  color: #000;
+  margin-top: 1rem;
+  width: auto;
+  font-size: 1.0rem;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  cursor: pointer;
+  color: #00ffff;
+  background: #000;
+}
+
+::placeholder {
+  color: #fafafa;
+}
+
+/** Email to avoid spam **/
+.mail {
+  display: inline-block;
+  font-style: italic;
+}
+
+.mail .at, .mail .dot {
+  font-size: .9rem;
+  margin: 0 .1rem;
+  color: #00ffff;
+}
+
+
+@media only screen and (max-width: 1149px) {
+  #contact .social a {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 649px) {
+  #contact {
+    clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 0 100%);
+    padding: 0;
+  }
+}
+
+#services {
+  height: 100%;
+  min-height: 100vh;
+  font-size: 1.4rem;
+  position: relative;
+  background: #252934;
+  z-index: 5;
+  background-attachment: fixed;
+}
+
+#services .wrapper {
+  padding: 0rem 10rem 0rem;
+  height: 100%;
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#services .title {
+  padding: 2rem;
+  grid-column-end: span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#services .title h3 {
+  color: white;
+
+  font-size: 2.4rem;
+}
+
+#services .separator {
+  background: white;
+  width: 150px;
+  height: 2px;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+
+
+
