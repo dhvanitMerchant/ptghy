@@ -23,14 +23,6 @@ const Services = props => {
           </div>
         </div>
       </div>
-
-      <div className="title">
-            <h3>Services</h3>
-            <p className="separator" />
-      </div>
-		<Progress label="Weeding" done="70"/>
-</div>
-
     </section>
   );
 }
