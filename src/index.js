@@ -1,6 +1,8 @@
+/* eslint-disable react/style-prop-object */
 import React from 'react';
 import ReactDOM from 'react-dom'
 import './components/App.css'
+import './components/Responsive.css'
 import Menu from './components/Menu/Menu';
 import Nav from './components/Navbar/Navbar';
 import About from './components/About/About';
@@ -9,6 +11,8 @@ import Pricing from './components/Pricing/Pricing';
 import Services from './components/Services/Services';
 import Contact from './components/Contact/Contact';
 import SocialLinks from './components/SocialLinks/SocialLinks'
+import ScrollUpButton from "react-scroll-up-button";
+
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 
@@ -21,16 +25,29 @@ const Header = props => {
     <header id="welcome-section">
      
       <div className="container">
+      <a href="#welcome-section"  onClick={props.toggleMenu}>
+
         <h1>
+
           <span className="line">We</span>
           <span className="line">create Love</span>
           <span className="line">
             <span className="color">&</span> moments.
           </span>
         </h1>
+        </a>
         
       </div>
+      
+      <div class="scrolldown container">
+      <a href="#welcome-section"  onClick={props.toggleMenu}>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+      </a>
+        </div>
     </header>
+    
   );
 };
 
@@ -41,18 +58,20 @@ const Header = props => {
 const Footer = props => {
   return (
     <footer>
+      <section id="footer">
       <div className="footer text-center">
         <hr></hr>
         <div className="row">
           <div className="col-lg-6 mb-4">
             <h3>THANKS FOR VISITING</h3>
-            <h6 className="text-muted mb-0">© {new Date().getFullYear()} Krunalogy INC</h6>
+            <h6 className="date mb-0">© {new Date().getFullYear()} Moments</h6>
           </div>
           <div className="col-lg-6 mb-4">
-            <SocialLinks />
+            <SocialLinks  />
           </div>
         </div>
       </div>
+      </section>
     </footer>
   );
 };
@@ -77,6 +96,7 @@ class App extends React.Component {
 
   render() {
     return (
+
       <React.Fragment>
         <Menu toggleMenu={this.toggleMenu} showMenu={this.state.menuState} />
         <Nav toggleMenu={this.toggleMenu} showMenu={this.state.menuState} />
@@ -87,6 +107,11 @@ class App extends React.Component {
         <Services />
         <Contact />
         <Footer />
+        <ScrollUpButton
+        ContainerClassName="backContainer"
+        TransitionClassName="backTransition"
+        EasingType="linear" />
+        
       </React.Fragment>
     );
   }

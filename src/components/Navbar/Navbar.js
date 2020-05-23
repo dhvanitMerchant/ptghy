@@ -28,7 +28,7 @@ const Nav = props => {
               </a>
             </li>
             </ul>
-            <a className="brand navbar-brand">
+            <a href="#welcome-section" className="brand navbar-brand">
             Mom
             <strong>ents</strong>
           </a>

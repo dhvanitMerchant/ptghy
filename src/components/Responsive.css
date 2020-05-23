@@ -1,0 +1,156 @@
+/** Responsive CSS 
+**/
+@media only screen and (max-width: 649px) {
+
+  .scrolldown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  footer{
+    color: cornsilk;
+  }
+  footer .text-muted{
+    color: cornsilk;
+  }
+    #about #services #contact .wrapper {
+      padding: 10rem 2rem 8rem;
+    }
+    #contact .heading-wrapper {
+    padding: 10rem 2rem 8em;
+    }
+    #contact-form {
+      padding: 2rem;;
+    }
+      .nav-item{
+        visibility: hidden;
+      }
+      .hiddennav {
+        visibility: visible;
+      }
+      #navbar {
+        width: 100%;
+        margin-top: 0px;
+        background-color: transparent;
+      }
+      #navbar .nav-wrapper {
+        padding: 0rem;
+      }
+      #navbar .brand {
+        display: flex;
+        justify-content: left;
+        font-size: 2.6rem;
+        color: #4b4343;
+        font-style: italic;
+        cursor: default;
+        margin-top: 0px;
+      }
+      .color {
+        color: #fff;
+        font-style: italic;
+        font-size: 2.5rem;
+      }
+      #welcome-section .container {
+        top: 25%;
+        width: 40%;
+        transform: translate(10%, 0);
+        animation: text-fade-in 1000ms 800ms forwards;
+      }
+    
+      #welcome-section .container h1 {
+        font-size: 3.0rem;
+        font-weight: normal;
+        font-style: italic;
+        color: #4b4343;
+        line-height: 1.8rem;
+      }
+      
+      #welcome-section .container h1 .line:first-child {
+        margin-left: 0rem;
+      }
+      
+      #welcome-section .container h1 .line:last-child {
+        margin-left: 0rem;
+      }
+    
+      @keyframes text-fade-in {
+        from {
+          right: 0;
+        }
+        to {
+          opacity: 1;
+          right: 50%;
+        }
+      }
+    
+      .silhouette {
+        width: 100%;
+      }
+    
+  
+      #contact {
+        clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 0 100%);
+        padding: 0;
+      }
+    
+    .menu-container {
+      position: fixed;
+      height: 100vh;
+      width: 100vw;
+      background: #000000c2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu-container::before,
+  .menu-container::after {
+    
+    content: '';
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+  }
+  
+
+    .menu-container {
+      border: none;
+      width: 100%;
+    }
+  
+    .menu-container > .overlay,
+    .menu-container.active > .overlay {
+      height: 100vh;
+      width: 100%;
+    }
+    
+    .menu-container.active > .overlay {
+      animation: overlay-slide-in 300ms forwards 300ms;
+    }
+    
+    @keyframes overlay-slide-in {
+      from {
+        width: 100%;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    
+    .menu-container > .overlay {
+      animation: overlay-slide-out 300ms forwards;
+    }
+    
+    @keyframes overlay-slide-out {
+      from {
+        left: 0;
+        width: 0;
+      }
+      to {
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+  
