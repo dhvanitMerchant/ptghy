@@ -7,12 +7,13 @@ const Services = props => {
       <div className="wrapper container">
 
       <div className="title">
-            <h3>Services</h3>
+      <h1 className="text-center">What we Offer?</h1>
+
             <p className="separator" />
       </div>
-        <h1 className="text-center">What we Offer?</h1>
+
         <div class="row">
-          <div class="col-lg-6 mx-auto">
+          <div class=" services col-lg-6 mx-auto">
             <span className="label">Wedding Photography<Progress done="90"/></span>
             <span className="label">Pre-Wedding Photography<Progress done="90"/></span>
             <span className="label">Angagement Photography<Progress done="85"/></span>

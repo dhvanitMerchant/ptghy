@@ -21,20 +21,18 @@ const Contact = props => {
               <span className="mail">
                 krunal
                 <i className="fas fa-at at" />
-                sonagra
-                <i className="fas fa-circle dot" />
-                com
+                sonagram.com               
               </span>
-              :
+                
             </p>
           </div>
           <SocialLinks />
         </div>
-        <form id="contact-form" action="#">
+        <form id="contact-form" action="#" class="form-group">
           <input placeholder="Name" name="name" type="text" required />
           <input placeholder="Email" name="email" type="email" required />
           <textarea placeholder="Message" type="text" name="message" />
-          <input className="button" id="submit" value="Submit" type="submit" />
+          <button type="button" id="submit" class="button btn btn-info btn-lg">Submit</button>
         </form>
       </div>
     </section>

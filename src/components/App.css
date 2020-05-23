@@ -14,7 +14,9 @@
 html, body {
   height: 100%;
 }
-
+title{
+  font-style: italic;
+}
 body {
   color: #252934;
   background: #fafafa;
@@ -62,7 +64,6 @@ a:active {
   right: 0;
   height: calc( 100vh - 120px );
   width: calc( 100% - 120px );
-  background: #181d23aa;
 }
 
 .menu-container.active > .overlay {
@@ -216,76 +217,6 @@ a:active {
   color: #000;
 }
 
-@media only screen and (max-width: 649px) {
-  .menu-container {
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    background: #202934;
-    border: 60px solid #181d23;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-  .menu-container::before,
-.menu-container::after {
-  
-  content: '';
-  position: absolute;
-  width: 100%;
-  min-height: 100vh;
-  z-index: -1;
-}
-
-.menu-container::before {
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Trees.svg?sanitize=true) bottom repeat-x;
-
-}
-
-.menu-container::after {
-  background: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Trees.svg?sanitize=true) bottom repeat-x;
-}
-  .menu-container {
-    border: none;
-    width: 100%;
-  }
-
-  .menu-container > .overlay,
-  .menu-container.active > .overlay {
-    height: 100vh;
-    width: 100%;
-  }
-  
-  .menu-container.active > .overlay {
-    animation: overlay-slide-in 300ms forwards 300ms;
-  }
-  
-  @keyframes overlay-slide-in {
-    from {
-      width: 100%;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
-  .menu-container > .overlay {
-    animation: overlay-slide-out 300ms forwards;
-  }
-  
-  @keyframes overlay-slide-out {
-    from {
-      left: 0;
-      width: 0;
-    }
-    to {
-      left: 0;
-      width: 100%;
-    }
-  }
-}
 
 /*****************
  *****************
@@ -303,7 +234,7 @@ a:active {
 }
 
 .bg-active {
-  background-color:#867979d8;
+  background-color:#817a7ac9;
   color: #fff;
 }
 
@@ -324,7 +255,7 @@ a:active {
   font-size: 2.6rem;
   color: #4b4343;
   font-style: italic;
-  cursor: default;
+  cursor: pointer;
 margin: 0px;
 }
 
@@ -382,11 +313,7 @@ margin: 0px;
   top: 0px;
 }
 
-@media only screen and (max-width: 849px) {
-  #navbar {
-    background: #181d23aa;
-  }
-}
+
 /*****************
  *****************
    HEADER STYLES
@@ -507,74 +434,7 @@ margin: 0px;
   font-style: italic;
 }
 
-@media only screen and (max-width: 649px) {
-  
 
-  .nav-item{
-    visibility: hidden;
-  }
-  .hiddennav {
-    visibility: visible;
-  }
-  #navbar {
-    width: 100%;
-    margin-top: 0px;
-    background-color: transparent;
-  }
-  #navbar .nav-wrapper {
-    padding: 0rem;
-  }
-  #navbar .brand {
-    display: flex;
-    justify-content: left;
-    font-size: 2.6rem;
-    color: #4b4343;
-    font-style: italic;
-    cursor: default;
-    margin-top: 0px;
-  }
-  .color {
-    color: #fff;
-    font-style: italic;
-    font-size: 2.5rem;
-  }
-  #welcome-section .container {
-    top: 25%;
-    width: 40%;
-    transform: translate(10%, 0);
-    animation: text-fade-in 1000ms 800ms forwards;
-  }
-
-  #welcome-section .container h1 {
-    font-size: 3.0rem;
-    font-weight: normal;
-    font-style: italic;
-    color: #4b4343;
-    line-height: 1.8rem;
-  }
-  
-  #welcome-section .container h1 .line:first-child {
-    margin-left: 0rem;
-  }
-  
-  #welcome-section .container h1 .line:last-child {
-    margin-left: 0rem;
-  }
-
-  @keyframes text-fade-in {
-    from {
-      right: 0;
-    }
-    to {
-      opacity: 1;
-      right: 50%;
-    }
-  }
-
-  .silhouette {
-    width: 100%;
-  }
-}
 /*****************
  *****************
    ABOUT STYLES
@@ -647,11 +507,6 @@ margin: 0px;
     background-size: cover;
   }
 }
-@media only screen and (max-width: 649px) {
-  #about #services .wrapper {
-    padding: 10rem 2rem 8rem;
-  }
-}
 
 /*****************
  *****************
@@ -666,8 +521,13 @@ margin: 0px;
   background: #ffffff;
   clip-path: polygon(0 0, 20% 0, 100% 0, 100% 100%, 80% 95%, 0 100%);
   z-index: 5;
+  
   background-attachment: fixed;
   padding-bottom: 5rem;
+}
+
+.services {
+  padding: 2rem;
 }
  
  .progress {
@@ -743,8 +603,10 @@ margin: 0px;
 
 
 footer{
+  
   background: #fbfbfb;
 }
+
 /*****************
  *****************
    CONTACT STYLES
@@ -753,6 +615,7 @@ footer{
 
  #contact {
   background: #181d23 url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/envelope.svg?sanitize=true) no-repeat right;
+  margin: -100px 0 0;
   color: #fafafa;
   min-height: 100vh;
   width: 100%;
@@ -761,7 +624,6 @@ footer{
   justify-content: center;
   align-items: center;
   position: relative;
-  margin: -100px 0 140px;
   z-index: 1;
 }
 
@@ -797,9 +659,7 @@ footer{
   font-size: 1.4rem;
 }
 
-#contact-form {
-  margin-top: 1rem;
-}
+
 
 input, textarea {
   border: none;
@@ -869,9 +729,95 @@ input[type="submit"]:focus {
   }
 }
 
-@media only screen and (max-width: 649px) {
-  #contact {
-    clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 0 100%);
-    padding: 0;
+
+/***
+Back to Top 
+**/
+
+.backContainer {
+  position: fixed;
+  right: -100px;
+  bottom: 150px;
+  transition: right 0.5s;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 7px;
+}
+
+.backTransition {
+  right: 20px;
+}
+
+
+
+.scrolldown {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-top: 10rem;
+  cursor: pointer;
+}
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+
+
+@keyframes pulse {
+  to {
+    opacity: 1;
   }
 }
