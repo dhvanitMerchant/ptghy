@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-
+import logo from '../images/blacklogo.png'
 
 /***********************
   Nav Component
@@ -28,10 +28,10 @@ const Nav = props => {
               </a>
             </li>
             </ul>
-            <a href="#welcome-section" className="brand navbar-brand">
-            Mom
-            <strong>ents</strong>
-          </a>
+
+            <a href="#welcome-section" className="text-center brand navbar-brand">
+            <img className="logo"alt = "logo"   src={logo} />
+            </a>
           <ul className="navbar-nav">
 
             <li className="nav-item">
