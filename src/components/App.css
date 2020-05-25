@@ -233,7 +233,7 @@ a:active {
 }
 
 .bg-active {
-  background-color:#817a7aef;
+  background-color:rgb(184,186,197);
   color: #fff;
 }
 
@@ -299,7 +299,7 @@ margin: 0px;
 }
 
 .menu-button.active > span  {
-  background: transparent;
+  background: rgb(214,209,207);
 }
 
 .menu-button.active > span::before  {
@@ -320,6 +320,7 @@ margin: 0px;
  *****************/
 
  #welcome-section {
+  /* background: url("../images/servicephoto.jpg"); */
   
   background: url(https://img.wallpaper.sc/ipad/images/2448x2448/ipad-2448x2448-wallpaper_01484.jpg);
   background-attachment: fixed;
@@ -602,7 +603,7 @@ margin: 0px;
 
 
 footer{
-  
+  margin-top: -1rem;
   background: #fbfbfb;
 }
 
@@ -825,3 +826,4 @@ Back to Top
   width: 25%;
   height: 100%;
 }
+
