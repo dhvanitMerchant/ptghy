@@ -10,7 +10,7 @@ import Gallaries from './components/Gallaries/Gallaries';
 import Pricing from './components/Pricing/Pricing';
 import Services from './components/Services/Services';
 import Contact from './components/Contact/Contact';
-import SocialLinks from './components/SocialLinks/SocialLinks'
+import SocialLinks from './components/SocialLinks/SocialLinks';
 import ScrollUpButton from "react-scroll-up-button";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
@@ -111,7 +111,6 @@ class App extends React.Component {
         ContainerClassName="backContainer"
         TransitionClassName="backTransition"
         EasingType="linear" />
-        
       </React.Fragment>
     );
   }
@@ -119,12 +118,30 @@ class App extends React.Component {
   componentDidMount() {
     const navbar = document.querySelector('#navbar');
     const header = document.querySelector('#welcome-section');
-   
+
+
+    const buttons = document.querySelectorAll('.project');
+    const overlay = document.querySelector('.overlay');
+    const overlayImage = document.querySelector('.overlay__inner img');
+
+    function open(e) {
+      overlay.classList.add('open');
+      const src= e.currentTarget.querySelector('img').src;
+      overlayImage.src = src;
+    }
+
+    function close() {
+      overlay.classList.remove('open');
+    }
+
+    buttons.forEach(button => button.addEventListener('click', open));
+    overlay.addEventListener('click', close);
+
+
+
 
     window.onscroll = () => {
       let scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
-
-     
 
       if (scrollPos - 100 <= window.innerHeight)
         header.style.visibility = header.style.visibility === 'hidden' && 'visible';

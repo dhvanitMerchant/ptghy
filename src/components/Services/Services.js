@@ -8,12 +8,11 @@ const Services = props => {
 
       <div className="title">
       <h1 className="text-center">What we Offer?</h1>
-
-            <p className="separator" />
+        <p className="separator" />
       </div>
 
         <div class="row">
-          <div class=" services col-lg-6 mx-auto">
+          <div class="services col-lg-6 mx-auto">
             <span className="label">Wedding Photography<Progress done="90"/></span>
             <span className="label">Pre-Wedding Photography<Progress done="90"/></span>
             <span className="label">Angagement Photography<Progress done="85"/></span>
