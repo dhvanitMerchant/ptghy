@@ -33,11 +33,33 @@ const Nav = props => {
             <img className="logo"alt = "logo"   src={logo} />
             </a>
           <ul className="navbar-nav">
+{/*             
+            <div class="dropdown">
+              <button class="dropbtn">Dropdown 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>  */}
+
+
 
             <li className="nav-item">
-              <a className="nav-link" href="#pricing">
+              <a class="nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 PRICING
               </a>
+              <div class="dropdown-menu dropdown-content" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#wedding">Wedding Photography</a>
+                <a class="dropdown-item" href="#engagement">Engagement Photography</a>
+                <a class="dropdown-item" href="#pre">Pre-wedding Photography</a>
+                <a class="dropdown-item" href="#event">Event/Concert Photography</a>
+                <a class="dropdown-item" href="#modelling">Modelling Photoshoot</a>
+                <a class="dropdown-item" href="#product">Product Shoot</a>
+                <a class="dropdown-item" href="#maternity">Maternity Shoot</a>
+              </div>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#services">
