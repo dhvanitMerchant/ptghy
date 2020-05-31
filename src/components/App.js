@@ -1,102 +1,90 @@
+/* eslint-disable strict */
+/* eslint-disable no-undef */
 import React from 'react';
 import './App.css';
 import './Responsive.css'
-import Menu from './Menu/Menu';
-import Nav from './Navbar/Navbar';
+
+// import {BrowserRouter as Router, Route} from 'react-router-dom';
+// import Navbar from './Navbar/Navbar';
 import About from './About/About';
-import Gallaries from './Gallaries/Gallaries';
+// import Gallaries from './Gallaries/Gallaries';
 import Package from './Pricing/Package';
-import Services from './Services/Services';
+// import Services from './Services/Services';
 import Contact from './Contact/Contact';
 import ScrollUpButton from "react-scroll-up-button";
+import Footer from './pages/NewFooter';
+import MainNav from './Navbar/MainNavbar';
 import Header from './pages/Header';
-import Footer from './pages/Footer';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import Services from './Services/Services';
+import Gallaries from './Gallaries/Gallaries';
 
 
-class App extends React.Component {
+class App extends React.Component{
+  render() {
+  return(
+    <div className="App">
+      <MainNav />
+      <Header /> 
+      <About />
+      <Gallaries />
+      {/* <Package /> */}
+      {/* <Services /> */}
+       <Contact />
+      <ScrollUpButton style={{padding:'5px'}} />
+      <Footer />
 
-  
-    state = {
-        menuState: false
-    };
+    </div>
+  )
 
-    toggleMenu = () => {
-        this.setState(state => ({
-            menuState: !state.menuState
-                ? 'active'
-                : state.menuState === 'deactive'
-                    ? 'active'
-                    : 'deactive'
-        }));
-    };
-    render() {
-        return (  
-
-
-          <Router> 
-                <Nav toggleMenu={this.toggleMenu} showMenu={this.state.menuState}/>
-                <Route
-                 
-                path='/' 
-                render={props => (
-                <div className="all">
-                <Menu toggleMenu={this.toggleMenu} showMenu={this.state.menuState}/>
-                <Header/>
-                <About />
-                <Gallaries/>
-                <Package />
-                <Services/>
-                <Contact/>
-                <Footer/>
-                <ScrollUpButton
-                    ContainerClassName="backContainer"
-                    TransitionClassName="backTransition"
-                    EasingType="linear"/>
-                </div>
-                )}/>
-               
-          </Router>
-                );
   }
-    
-    componentDidMount() {
-      const navbar = document.querySelector('#navbar');
-      const header = document.querySelector('#welcome-section');
+  componentDidMount() {
+
   
-  
-      const buttons = document.querySelectorAll('.project');
-      const overlay = document.querySelector('.overlay');
-      const overlayImage = document.querySelector('.overlay__inner img');
-  
-      function open(e) {
-        overlay.classList.add('open');
-        const src= e.currentTarget.querySelector('img').src;
-        overlayImage.src = src;
-      }
-  
-      function close() {
-        overlay.classList.remove('open');
-      }
-  
-      buttons.forEach(button => button.addEventListener('click', open));
-      overlay.addEventListener('click', close);
-  
-  
-  
-  
-      window.onscroll = () => {
-        let scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
-  
-        if (scrollPos - 100 <= window.innerHeight)
-          header.style.visibility = header.style.visibility === 'hidden' && 'visible';
-        else header.style.visibility = 'hidden';
-  
-        if (scrollPos + 100 >= window.innerHeight) navbar.classList.add('bg-active');
-        else navbar.classList.remove('bg-active');
-      };
-  
+ 
+    (function($) {
+
+      $('.js-nav a').click(function(e) {
+        e.preventDefault();
+        $('body, html').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+        }, 750);
+      });
+
+      $('body').scrollspy({
+          target: '.navbar-fixed-top',
+          offset: 60
+      });
+
+       $('#topNav').affix({
+            offset: {
+                top: 200
+            }
+        });
+      new WOW().init();
       
-    }
+      $('a.page-scroll').bind('click', function(event) {
+          var $ele = $(this);
+          $('html, body').stop().animate({
+              scrollTop: ($($ele.attr('href')).offset().top - 60)
+          }, 1450, 'easeInOutExpo');
+          event.preventDefault();
+      });
+      
+      $('.navbar-collapse ul li a').click(function() {
+          /* always close responsive nav after click */
+          $('.navbar-toggle:visible').click();
+      });
+  
+      $('#galleryModal').on('show.bs.modal', function (e) {
+         $('#galleryImage').attr("src",$(e.relatedTarget).data("src"));
+      });
+  
+  })(jQuery);
+
+
+    
+    
+    
   }
+}
 export default App;

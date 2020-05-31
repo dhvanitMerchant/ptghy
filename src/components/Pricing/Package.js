@@ -1,12 +1,11 @@
 import React from 'react';
 import SinglePackage from './SinglePackage'
+import PackageLinks from './PackageLinks';
 
 class Package extends React.Component {
 
-  
     render() {
 
-   
         const packages = [
             {
                 packageName: 'Package 1',
@@ -59,18 +58,19 @@ class Package extends React.Component {
 
 
         return (
-            <div className="packageList">
-                {packages.map((singlePackage, index) => {
+            <section id="pricing" className="bg-dark">
+                {packages.map((singlePackage,singlePackageLinks, index) => {
                     return (
                         <div key={index}>
-                            <SinglePackage  singlePackage={singlePackage} />
-                            
+                            <PackageLinks singlePackageLinks = {singlePackageLinks}/>
+                            <SinglePackage singlePackage={singlePackage}/>
+
                         </div>
                     )
                 })
 }
 
-            </div>
+            </section>
 
         );
     }
