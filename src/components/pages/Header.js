@@ -1,9 +1,7 @@
 import React from 'react'
 
 const Header = () => {
-    return (
-        <div>
-
+    return 
         <header id="welcome-section"  className="welcome-section d-flex">
 					<div className="container text-center my-auto animated flipInX " data-wow-delay=".3s">
 						<h1 className="mb-1">
@@ -20,7 +18,7 @@ const Header = () => {
 							</a>
 						</div>
         </header>
-    </div>
+    
     );
 };
 
