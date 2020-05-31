@@ -2,7 +2,7 @@ import React from 'react';
 
 const SocialLinks = props => {
     return (
-      <div className="social">
+      <div className="social text-dark">
         <a
           id="profile-link"
           href="https://www.facebook.com/krunal.sonagara"
