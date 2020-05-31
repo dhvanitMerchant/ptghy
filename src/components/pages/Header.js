@@ -4,32 +4,23 @@ const Header = () => {
     return (
         <div>
 
-            <header id="welcome-section" >
-                <div className="container  animated flipInX " data-wow-delay=".3s">
-
-                    <h1>
-                        
-
-                        <span className="line">We create</span>
-                        <span className="line">Love <span className="color">&</span></span>
-                        <span className="line">
-                            
-                            moments.
-                        </span>
-                    </h1>
-
-                </div>
-
-                <div class="scrolldown js-nav container">
-                    <a href="#about">
-                        <div class="chevron"></div>
-                        <div class="chevron"></div>
-                        <div class="chevron"></div>
-                    </a>
-                </div>
-            </header>
-        </div>
-
+        <header id="welcome-section"  className="welcome-section d-flex">
+					<div className="container text-center my-auto animated flipInX " data-wow-delay=".3s">
+						<h1 className="mb-1">
+							<span className="line">We create</span>
+							<span className="line">Love <span className="color">&</span></span>
+							<span className="line">
+								moments.
+							</span>
+						</h1>
+							<a className="scrolldown js-nav page-scroll" href="#about">
+								<div className="chevron"></div>
+								<div className="chevron"></div>
+								<div className="chevron"></div>
+							</a>
+						</div>
+        </header>
+    </div>
     );
 };
 
