@@ -27,9 +27,9 @@ class App extends React.Component{
       <Header /> 
       <About />
       <Gallaries />
-      <Package />
-      <Services />
-       <Contact />
+      {/* <Package /> */}
+      {/* <Services /> */}
+      <Contact />
       <ScrollUpButton style={{padding:'5px'}} />
       <Footer />
 
@@ -38,11 +38,7 @@ class App extends React.Component{
 
   }
   componentDidMount() {
-
-  
- 
     (function($) {
-
       $('.js-nav a').click(function(e) {
         e.preventDefault();
         $('body, html').animate({
@@ -66,7 +62,7 @@ class App extends React.Component{
           var $ele = $(this);
           $('html, body').stop().animate({
               scrollTop: ($($ele.attr('href')).offset().top - 60)
-          }, 1450, 'easeInOutExpo');
+          }, 1450, 'none');
           event.preventDefault();
       });
       
@@ -78,13 +74,7 @@ class App extends React.Component{
       $('#galleryModal').on('show.bs.modal', function (e) {
          $('#galleryImage').attr("src",$(e.relatedTarget).data("src"));
       });
-  
   })(jQuery);
-
-
-    
-    
-    
   }
 }
 export default App;

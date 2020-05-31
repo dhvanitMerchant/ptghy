@@ -6,7 +6,7 @@ export default function NewFooter() {
         <footer id="footer">
         <div class="container">
             <div class="row">
-            <div class="col-xs-6 col-sm-3 text-center">
+            <div class="col-xs-6 col-sm-3">
                 <span>
                 <h4>THANKS FOR VISITING</h4>
               <h5 className="date mb-0 cursive">© {new Date().getFullYear()} MOMENTS </h5>
