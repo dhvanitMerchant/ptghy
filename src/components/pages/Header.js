@@ -5,6 +5,8 @@ const Header = () => {
         <div>
 
             <header id="welcome-section" >
+                {/* <div class="overlay"></div> */}
+
                 <div className="container  animated flipInX " data-wow-delay=".3s">
 
                     <h1>

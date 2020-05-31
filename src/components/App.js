@@ -27,8 +27,8 @@ class App extends React.Component{
       <Header /> 
       <About />
       <Gallaries />
-      {/* <Package /> */}
-      {/* <Services /> */}
+      <Package />
+      <Services />
        <Contact />
       <ScrollUpButton style={{padding:'5px'}} />
       <Footer />

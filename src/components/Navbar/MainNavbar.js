@@ -1,6 +1,6 @@
 import React from "react";
 import logo from '../images/whitelogo.png'
-import SocialLinks from "../SocialLinks/SocialLinks";
+// import SocialLinks from "../SocialLinks/SocialLinks";
 
 function MainNav() {
   return (
