@@ -4,6 +4,8 @@ import React from 'react';
 import './App.css';
 import './Responsive.css'
 import './App.scss';
+import videoBack from '../images/videoBack2.gif'
+
 
 import About from './About/About';
 import Package from './Pricing/NewPackage';
@@ -15,14 +17,12 @@ import Header from './pages/Header';
 import Gallaries from './Gallaries/Gallaries';
 
 const Loading =()=>
-<div class="loader">
+<div class='loader'>
   <div class="load-text">
-    <div class="loaded-text">H</div>
-    <div class="loading-text">ello</div>
+  <img className='img-responsive' alt='logo' src={videoBack} />
   </div>
-</div>
 
-
+  </div>
 
 class App extends React.Component{
 
@@ -53,7 +53,7 @@ class App extends React.Component{
 
   componentDidMount() {
 
-    this.isLoading = setTimeout(()=>{this.setState({loading: false})}, 2100);
+    this.isLoading = setTimeout(()=>{this.setState({loading: false})}, 7000);
 
     (function($) {
       $('.js-nav a').click(function(e) {
