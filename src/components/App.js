@@ -14,11 +14,27 @@ import MainNav from './Navbar/MainNavbar';
 import Header from './pages/Header';
 import Gallaries from './Gallaries/Gallaries';
 
+const Loading =()=>
+<div class="loader">
+  <div class="load-text">
+    <div class="loaded-text">H</div>
+    <div class="loading-text">ello</div>
+  </div>
+</div>
+
+
 
 class App extends React.Component{
+
+  state = {
+    loading: true,
+  };
+  
   render() {
+   const {loading} = this.state;
   return(
-    <div className="App">
+    loading ? (<Loading/>):
+    (<div className="App">
       <MainNav />
       <Header /> 
       <About />
@@ -30,11 +46,15 @@ class App extends React.Component{
       <ScrollUpButton style={{padding:'5px'}} />
       <Footer />
 
-    </div>
+    </div>)
   )
 
   }
+
   componentDidMount() {
+
+    this.isLoading = setTimeout(()=>{this.setState({loading: false})}, 2100);
+
     (function($) {
       $('.js-nav a').click(function(e) {
         e.preventDefault();
@@ -73,5 +93,13 @@ class App extends React.Component{
       });
   })(jQuery);
   }
+
+  componentWillUnmount() {
+    clearTimeout(this.isLoading);
+ }
+ 
+ timer = () => setTimeout(()=>{
+   this.setState({loading: false})
+ }, 2500);
 }
 export default App;
