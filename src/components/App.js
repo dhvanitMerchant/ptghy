@@ -18,10 +18,7 @@ import Gallaries from './Gallaries/Gallaries';
 
 class App extends React.Component{
 
-  state = {
-    loading: true,
-  };
-  
+
   render() {
   return(
     <div className="App">
@@ -43,7 +40,6 @@ class App extends React.Component{
 
 componentDidMount() {
   
-  this.isLoading = setTimeout(()=>{this.setState({loading: true})}, 7010);
     
     (function($) {
       $('.js-nav a').click(function(e) {
@@ -69,7 +65,7 @@ componentDidMount() {
     var $ele = $(this);
     $('html, body').stop().animate({
       scrollTop: ($($ele.attr('href')).offset().top - 60)
-      }, 1450, 'easeInOutExpo');
+      }, 1450, 'none');
       event.preventDefault();
     });
     
@@ -86,12 +82,6 @@ componentDidMount() {
   
 }
 
-  componentWillUnmount() {
-    clearTimeout(this.isLoading);
- }
- 
- timer = () => setTimeout(()=>{
-   this.setState({loading: false})
- }, 2500);
+
 }
 export default App;
