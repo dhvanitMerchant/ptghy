@@ -40,7 +40,7 @@ function MainNav() {
                 </ul>
                 <ul className="nav navbar-nav navbar-right ">
                     <li>
-                        <a className="page-scroll animated bounce"  href="#contact">
+                        <a className="page-scroll wow animate__animated animate__jello"  data-wow-delay="7s"  href="#contact">
                             
                             Hire Me?
                         </a>

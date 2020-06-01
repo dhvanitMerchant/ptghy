@@ -15,7 +15,6 @@
         border-color: transparent;
         background-color: transparent;
         min-height: 60px;
-        padding: 10px;
     }
 
 
@@ -101,7 +100,10 @@
 
       }
 
-
+      .modal-content {
+        margin-top:10rem;
+        background-color: #1d1d1d;
+    }
     
 
   
