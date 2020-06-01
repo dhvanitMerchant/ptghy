@@ -4,7 +4,6 @@ import React from 'react';
 import './App.css';
 import './Responsive.css'
 import './App.scss';
-import videoBack from '../images/videoBack2.gif'
 
 
 import About from './About/About';
@@ -16,13 +15,6 @@ import MainNav from './Navbar/MainNavbar';
 import Header from './pages/Header';
 import Gallaries from './Gallaries/Gallaries';
 
-const Loading =()=>
-<div class='loader'>
-  <div class="load-text">
-  <img className='img-responsive' alt='logo' src={videoBack} />
-  </div>
-
-  </div>
 
 class App extends React.Component{
 
@@ -31,10 +23,8 @@ class App extends React.Component{
   };
   
   render() {
-   const {loading} = this.state;
   return(
-    loading ? (<Loading/>):
-    (<div className="App">
+    <div className="App">
       <MainNav />
       <Header /> 
       <About />
@@ -46,53 +36,55 @@ class App extends React.Component{
       <ScrollUpButton style={{padding:'5px'}} />
       <Footer />
 
-    </div>)
+    </div>
   )
+  
+}
 
-  }
-
-  componentDidMount() {
-
-    this.isLoading = setTimeout(()=>{this.setState({loading: false})}, 7010);
-
+componentDidMount() {
+  
+  this.isLoading = setTimeout(()=>{this.setState({loading: true})}, 7010);
+    
     (function($) {
       $('.js-nav a').click(function(e) {
         e.preventDefault();
-        $('body, html').animate({
-          scrollTop: $($.attr(this, 'href')).offset().top
-        }, 750);
-      });
-
-      $('body').scrollspy({
-          target: '.navbar-fixed-top',
-          offset: 60
-      });
-
-       $('#topNav').affix({
-            offset: {
-                top: 200
-            }
-        });
-      new WOW().init();
-      
-      $('a.page-scroll').bind('click', function(event) {
-          var $ele = $(this);
-          $('html, body').stop().animate({
-              scrollTop: ($($ele.attr('href')).offset().top - 60)
-          }, 1450, 'none');
-          event.preventDefault();
-      });
-      
-      $('.navbar-collapse ul li a').click(function() {
-          /* always close responsive nav after click */
-          $('.navbar-toggle:visible').click();
-      });
+  $('body, html').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top
+  }, 750);
+  });
   
-      $('#galleryModal').on('show.bs.modal', function (e) {
-         $('#galleryImage').attr("src",$(e.relatedTarget).data("src"));
-      });
+  $('body').scrollspy({
+  target: '.navbar-fixed-top',
+  offset: 60
+});
+
+  $('#topNav').affix({
+    offset: {
+      top: 200
+    }
+  });
+  new WOW().init();
+  
+  $('a.page-scroll').bind('click', function(event) {
+    var $ele = $(this);
+    $('html, body').stop().animate({
+      scrollTop: ($($ele.attr('href')).offset().top - 60)
+      }, 1450, 'easeInOutExpo');
+      event.preventDefault();
+    });
+    
+    $('.navbar-collapse ul li a').click(function() {
+      /* always close responsive nav after click */
+      $('.navbar-toggle:visible').click();
+    });
+    
+    $('#galleryModal').on('show.bs.modal', function (e) {
+      $('#galleryImage').attr("src",$(e.relatedTarget).data("src"));
+    });
+    
   })(jQuery);
-  }
+  
+}
 
   componentWillUnmount() {
     clearTimeout(this.isLoading);

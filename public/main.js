@@ -1,14 +1,39 @@
-(function navSmoothScrolling() {
-    const internalLinks = document.querySelectorAll('a[href^="#"]');
-    for (let i in internalLinks) {
-      if (internalLinks.hasOwnProperty(i)) {
-        internalLinks[i].addEventListener('click', e => {
-          e.preventDefault();
-          document.querySelector(internalLinks[i].hash).scrollIntoView({
-            block: 'start',
-            behavior: 'smooth'
-          });
-        });
-      }
-    }
-  })();
+
+(function($) {
+$('.js-nav a').click(function(e) {
+e.preventDefault();
+$('body, html').animate({
+  scrollTop: $($.attr(this, 'href')).offset().top
+}, 750);
+});
+
+$('body').scrollspy({
+target: '.navbar-fixed-top',
+offset: 60
+});
+
+$('#topNav').affix({
+  offset: {
+    top: 200
+  }
+});
+new WOW().init();
+
+$('a.page-scroll').bind('click', function(event) {
+var $ele = $(this);
+  $('html, body').stop().animate({
+      scrollTop: ($($ele.attr('href')).offset().top - 60)
+    }, 1450, 'easeInOutExpo');
+    event.preventDefault();
+  });
+  
+  $('.navbar-collapse ul li a').click(function() {
+    /* always close responsive nav after click */
+    $('.navbar-toggle:visible').click();
+  });
+  
+  $('#galleryModal').on('show.bs.modal', function (e) {
+    $('#galleryImage').attr("src",$(e.relatedTarget).data("src"));
+  });
+  
+})(jQuery);
