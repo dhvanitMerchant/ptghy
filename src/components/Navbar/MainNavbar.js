@@ -38,7 +38,7 @@ function MainNav() {
                     </li>
                  
                 </ul>
-                <ul className="nav navbar-nav navbar-right ">
+                <ul className="nav js-nav navbar-nav navbar-right ">
                     <li>
                         <a className="page-scroll wow animate__animated animate__jello"  data-wow-delay="7s"  href="#contact">
                             
