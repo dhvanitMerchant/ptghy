@@ -14,14 +14,30 @@ import Footer from './pages/NewFooter';
 import MainNav from './Navbar/MainNavbar';
 import Header from './pages/Header';
 import Gallaries from './Gallaries/Gallaries';
+import videoBack from '../images/videoBack2.gif'
+
+const Loading = () => 
+
+<div class="loading" delay-hide="7000">
+  <div class="load-text">
+  <img className='img-responsive' alt='logo' src={videoBack} />
+  </div>
+
+</div>
+
+
 
 
 class App extends React.Component{
 
 
   render() {
+
+    
+
   return(
     <div className="App">
+      <Loading />
       <MainNav />
       <Header /> 
       <About />
@@ -39,7 +55,11 @@ class App extends React.Component{
 }
 
 componentDidMount() {
-  
+
+  $(document).ready(function(){
+    var loading = $(".loading");
+    loading.delay(loading.attr("delay-hide")).slideUp();
+  });
     
     (function($) {
       $('.js-nav a').click(function(e) {
