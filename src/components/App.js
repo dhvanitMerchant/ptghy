@@ -53,7 +53,7 @@ class App extends React.Component{
 
   componentDidMount() {
 
-    this.isLoading = setTimeout(()=>{this.setState({loading: false})}, 7000);
+    this.isLoading = setTimeout(()=>{this.setState({loading: false})}, 7010);
 
     (function($) {
       $('.js-nav a').click(function(e) {
