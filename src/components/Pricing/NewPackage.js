@@ -1,8 +1,9 @@
 import React from 'react';
+// import SinglePackage from './SinglePackage'
 import packages from './packageContent'
 import SinglePackageService from './SinglePackageService';
 
-class Package extends React.Component {
+class NewPackage extends React.Component {
 
     
 
@@ -16,17 +17,20 @@ class Package extends React.Component {
         }
 
         return (
-            <section id="pricing" className="bg-light">
+            <section id="pricing" className="bg-dark">
                 <div className="col-lg-12 text-center wow slideInUp" data-wow-delay=".6s">
                     <h2 className="margin-top-0 text-light">What we have?</h2>
                     <hr className="light"/>
                 </div>
 
-                <div class="gallery-wrap container">
+         
+
+                <div class="packageContainer">
                     {packages.map((singlePackage, index) => {
                         return (
-                            <div class="item conatiner text-center">
-                                <div class="singlePackage conatiner">
+                            <div class="card">
+                                 {/* <img alt = 'land' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/False_alarm_-a.jpg/1280px-False_alarm_-a.jpg"/> */}
+                                <div class="conatiner">
                                     <h1>{singlePackage.packageName}</h1>
                                     <div style={days} className="desc">
                                         Days: {singlePackage.days}
@@ -43,6 +47,7 @@ class Package extends React.Component {
                                                 return (<SinglePackageService singlePackageService={singlePackageService}/>)
                                             })
 }
+                                    <div class="card__head">{singlePackage.packageName}</div>
                                     </div>
 
                                 </div>
@@ -57,4 +62,4 @@ class Package extends React.Component {
     }
 }
 
-export default Package;
+export default NewPackage;

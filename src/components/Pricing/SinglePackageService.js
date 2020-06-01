@@ -2,11 +2,9 @@ import React from 'react';
 
 function SinglePackageService({singlePackageService}) {
     return (
-        <ul>
-            <li>
+        <p>
                 {singlePackageService.service}
-            </li>
-        </ul>
+        </p>
     )
 }
 

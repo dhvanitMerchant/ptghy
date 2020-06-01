@@ -18,9 +18,7 @@ function singlePackage({singlePackage}) {
                     <div style={days} className="desc">
                         Days: {singlePackage.days}
 
-                        &nbsp; 
-
-                        Rs {singlePackage.price}
+                        &nbsp; Rs {singlePackage.price}
                         /-
                     </div>
                     <div style={service} className="services">

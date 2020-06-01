@@ -3,19 +3,15 @@
 import React from 'react';
 import './App.css';
 import './Responsive.css'
+import './App.scss';
 
-// import {BrowserRouter as Router, Route} from 'react-router-dom';
-// import Navbar from './Navbar/Navbar';
 import About from './About/About';
-// import Gallaries from './Gallaries/Gallaries';
-import Package from './Pricing/Package';
-// import Services from './Services/Services';
+import Package from './Pricing/NewPackage';
 import Contact from './Contact/Contact';
 import ScrollUpButton from "react-scroll-up-button";
 import Footer from './pages/NewFooter';
 import MainNav from './Navbar/MainNavbar';
 import Header from './pages/Header';
-import Services from './Services/Services';
 import Gallaries from './Gallaries/Gallaries';
 
 
@@ -27,8 +23,9 @@ class App extends React.Component{
       <Header /> 
       <About />
       <Gallaries />
-      {/* <Package /> */}
+      <Package />
       {/* <Services /> */}
+      
       <Contact />
       <ScrollUpButton style={{padding:'5px'}} />
       <Footer />
