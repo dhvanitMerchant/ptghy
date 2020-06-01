@@ -13,11 +13,13 @@ const Header = () => {
 								moments.
 							</span>
 						</h1>
-							<a className="scrolldown js-nav page-scroll" href="#about">
+						<div className='js-nav'>
+							<a className="scrolldown  page-scroll" href="#about">
 								<div className="chevron"></div>
 								<div className="chevron"></div>
 								<div className="chevron"></div>
 							</a>
+						</div>
 						</div>
         </header>
     

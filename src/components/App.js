@@ -7,7 +7,7 @@ import './App.scss';
 
 
 import About from './About/About';
-import Package from './Pricing/NewPackage';
+import Package from './Pricing/Package';
 import Contact from './Contact/Contact';
 import ScrollUpButton from "react-scroll-up-button";
 import Footer from './pages/NewFooter';
@@ -18,7 +18,8 @@ import videoBack from '../images/videoBack2.gif'
 
 const Loading = () => 
 
-<div class="loading" delay-hide="7000">
+<div class="loading" delay-hide="0">
+  
   <div class="load-text">
   <img className='img-responsive' alt='logo' src={videoBack} />
   </div>
@@ -43,8 +44,6 @@ class App extends React.Component{
       <About />
       <Gallaries />
       <Package />
-      {/* <Services /> */}
-      
       <Contact />
       <ScrollUpButton style={{padding:'5px'}} />
       <Footer />

@@ -1,11 +1,13 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 import img1 from '../images/headerImageRing.jpg'
+import Rituals from '../Rituals/rituals';
 
 
 const Gallaries = props => {
     return (
-        <section id="gallaries" class="no-padding">
+        <section id="gallaries" class="bg-light">
+        <Rituals />
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
