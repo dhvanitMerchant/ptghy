@@ -17,6 +17,7 @@
         padding: 10px;
     }
 
+
   
     .navbar-header > .navbar-brand {
         color: rgba(255,255,255,0.7);
@@ -79,7 +80,18 @@
   }
  */
 
-  
+  .welcome-section {
+
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    background: url(/static/media/kissing.f06e2b42.jpg);
+    background-attachment: inherit;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    z-index: 1;
+    opacity: 1;
+}
       .color {
         color: #fff;
       }
@@ -99,6 +111,16 @@
 
       }
     
+      .load-text {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        width: fit-content;
+        display: flex;
+        animation: colorChange .5s linear 7s forwards;
+   
+      }
 
 
     
