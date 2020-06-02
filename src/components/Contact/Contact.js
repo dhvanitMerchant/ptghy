@@ -10,7 +10,9 @@ const Contact = props => {
      <div class="container ">
             <div class="row ">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="margin-top-0 animated bounce" >Get in Touch</h2>
+                <h2 className="margin-top-0 text-light headers">
+                    <i class="fas fa-caret-left"></i>&nbsp; Get in Touch &nbsp;<i class="fas fa-caret-right"></i>
+                </h2>
                     <hr class="light"/>
                 </div>
                 <div class="col-lg-10 col-lg-offset-1 text-center">

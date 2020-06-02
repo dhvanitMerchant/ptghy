@@ -19,7 +19,9 @@ class Package extends React.Component {
         return (
             <section id="pricing" className="bg-dark aside">
                 <div className="col-lg-12 text-center wow slideInUp" data-wow-delay=".6s">
-                    <h2 className="margin-top-0 text-light">What we have?</h2>
+                <h2 className="margin-top-0 text-light headers">
+                    <i class="fas fa-caret-left"></i>&nbsp; What we Have? &nbsp;<i class="fas fa-caret-right"></i>
+                </h2>
                     <hr className="light"/>
                 </div>
 
