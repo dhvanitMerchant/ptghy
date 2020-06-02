@@ -21,26 +21,26 @@ function MainNav() {
             <div className="navbar-collapse collapse" id="bs-navbar">
                 <ul className="nav navbar-nav js-nav">
                     <li>
-                        <a className="page-scroll" href="#welcome-section">HOME</a>
+                        <a className="page-scroll hvr-underline-from-center" href="#welcome-section">HOME</a>
                     </li>
                     <li>
-                        <a className="page-scroll" href="#about">About</a>
+                        <a className="page-scroll hvr-underline-from-center" href="#about">About</a>
                     </li>
                     <li>
-                        <a className="page-scroll" href="#gallaries">Gallery</a>
+                        <a className="page-scroll hvr-underline-from-center" href="#gallaries">Gallery</a>
                     </li>
                     <li>
-                        <a className="page-scroll" href="#pricing">Pricing</a>
+                        <a className="page-scroll hvr-underline-from-center" href="#pricing">Pricing</a>
                     </li>
                    
                     <li>
-                        <a className="page-scroll" href="#services">Services</a>
+                        <a className="page-scroll hvr-underline-from-center" href="#services">Services</a>
                     </li>
                  
                 </ul>
                 <ul className="nav js-nav navbar-nav navbar-right ">
                     <li>
-                        <a className="page-scroll wow animate__animated animate__jello"  data-wow-delay="7s"  href="#contact">
+                        <a className="page-scroll wow animate__animated animate__jello hvr-reveal"  data-wow-delay="7s"  href="#contact">
                             
                             Hire Me?
                         </a>

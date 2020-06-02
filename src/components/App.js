@@ -10,7 +10,7 @@ import About from './About/About';
 import Package from './Pricing/Package';
 import Contact from './Contact/Contact';
 import ScrollUpButton from "react-scroll-up-button";
-import Footer from './pages/NewFooter';
+import Footer from './pages/Footer';
 import MainNav from './Navbar/MainNavbar';
 import Header from './pages/Header';
 import Gallaries from './Gallaries/Gallaries';
@@ -18,7 +18,7 @@ import videoBack from '../images/videoBack2.gif'
 
 const Loading = () => 
 
-<div class="loading" delay-hide="7000">
+<div class="loading" delay-hide="000">
   
   <div class="load-text">
   <img className='img-responsive' alt='logo' src={videoBack} />

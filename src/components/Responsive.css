@@ -8,6 +8,11 @@
   }
 
 
+  .line {
+    display: block;
+    justify-content: center;
+  }
+
   .container > .navbar-header {
     padding: 20px;
   }

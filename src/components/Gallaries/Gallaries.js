@@ -86,7 +86,7 @@ const Gallaries = props => {
         </div>
 
         <div id="galleryModal" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-lg animate__animated animate__jackInTheBox">
         <div class="modal-content">
         	<div class="modal-body">
         		<img alt="modal" src="//placehold.it/1200x700/222?text=..." id="galleryImage" class="img-responsive" />
