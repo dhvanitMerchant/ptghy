@@ -1,6 +1,42 @@
 /** Responsive CSS 
 **/
 @media only screen and (max-width: 649px) {
+  .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: white;
+    background-color:transparent;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: white;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+  color: white;
+}
+  .dropdown-menu {
+    background: #222;
+    border-radius: 0;
+    border: 0;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .dropdown a:hover {
+    background: transparent;
+    
+  }
+  .dropdown-menu li a {
+    padding: 10px;
+    color: white;
+  
+  }
+  
+  .dropdown-menu li a:hover {
+    background: transparent;
+    color: white;
+  
+  
+  }
 
   .logo{
     width: 90px;
