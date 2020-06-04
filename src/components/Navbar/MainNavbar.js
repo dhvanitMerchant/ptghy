@@ -1,6 +1,7 @@
 import React from "react";
 import logo from '../images/whitelogo.png'
-// import SocialLinks from "../SocialLinks/SocialLinks";
+import {Link} from 'react-router-dom';
+ // import SocialLinks from "../SocialLinks/SocialLinks";
 
 function MainNav() {
   return (
@@ -26,9 +27,21 @@ function MainNav() {
                     <li>
                         <a className="page-scroll hvr-underline-from-center" href="#about">About</a>
                     </li>
-                    <li>
-                        <a className="page-scroll hvr-underline-from-center" href="#gallaries">Gallery</a>
+                    <li id= "drop" class="dropdown  page-scroll">
+                    <a href="/" class="dropdown-toggle page-scoll hvr-underline-from-center" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                    <ul class="dropdown-menu page-scroll js-nav">
+                        <li>
+                        <Link to="/rituals" className="page-scroll hvr-underline-from-left">Rituals</Link>
+                        </li>
+                        <li>
+                        <Link to="/rituals" className="page-scroll hvr-underline-from-left">Rituals</Link>
+                        </li>
+                        <li>
+                        <Link to="/rituals"className="page-scroll hvr-underline-from-left">Rituals</Link>
+                        </li>
+                    </ul>
                     </li>
+                   
                     <li>
                         <a className="page-scroll hvr-underline-from-center" href="#pricing">Pricing</a>
                     </li>

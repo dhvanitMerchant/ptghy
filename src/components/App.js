@@ -78,6 +78,12 @@ componentDidMount() {
       top: 200
     }
   });
+
+  $('#drop').affix({
+    offset: {
+      top: 200
+    }
+  });
   new WOW().init();
   
   $('a.page-scroll').bind('click', function(event) {
@@ -87,6 +93,7 @@ componentDidMount() {
       }, 1450, 'none');
       event.preventDefault();
     });
+    
     
     $('.navbar-collapse ul li a').click(function() {
       /* always close responsive nav after click */
