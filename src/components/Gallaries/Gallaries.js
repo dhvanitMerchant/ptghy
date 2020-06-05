@@ -6,77 +6,77 @@ import Rituals from '../Rituals/rituals';
 
 const Gallaries = props => {
     return (
-        <section id="gallaries" class="bg-light">
+        <section id="gallaries" className="bg-light">
         <Rituals />
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src={img1}>
-                        <img src={img1} class="img-responsive" alt="Image 1"/>
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
+        <div className="container-fluid">
+            <div className="row no-gutter">
+                <div className="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
+                    <a href="#galleryModal" className="gallery-box" data-toggle="modal" data-src={img1}>
+                        <img src={img1} className="img-responsive" alt="Image 1"/>
+                        <div className="gallery-box-caption">
+                            <div className="gallery-box-content">
                                 <div>
-                                    <i class="icon-lg ion-ios-search"></i>
+                                    <i className="icon-lg ion-ios-search"></i>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/getrefe/regular/tumblr_nqune4OGHl1slhhf0o1_1280.jpg">
-                        <img src="//splashbase.s3.amazonaws.com/getrefe/regular/tumblr_nqune4OGHl1slhhf0o1_1280.jpg" class="img-responsive" alt="Image 2"/>
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
+                <div className="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
+                    <a href="#galleryModal" className="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/getrefe/regular/tumblr_nqune4OGHl1slhhf0o1_1280.jpg">
+                        <img src="//splashbase.s3.amazonaws.com/getrefe/regular/tumblr_nqune4OGHl1slhhf0o1_1280.jpg" className="img-responsive" alt="Image 2"/>
+                        <div className="gallery-box-caption">
+                            <div className="gallery-box-content">
                                 <div>
-                                    <i class="icon-lg ion-ios-search"></i>
+                                    <i className="icon-lg ion-ios-search"></i>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/unsplash/regular/photo-1433959352364-9314c5b6eb0b%3Fq%3D75%26fm%3Djpg%26w%3D1080%26fit%3Dmax%26s%3D3b9bc6caa190332e91472b6828a120a4">
-                        <img src="//splashbase.s3.amazonaws.com/unsplash/regular/photo-1433959352364-9314c5b6eb0b%3Fq%3D75%26fm%3Djpg%26w%3D1080%26fit%3Dmax%26s%3D3b9bc6caa190332e91472b6828a120a4" class="img-responsive" alt="Image 3"/>
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
+                <div className="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
+                    <a href="#galleryModal" className="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/unsplash/regular/photo-1433959352364-9314c5b6eb0b%3Fq%3D75%26fm%3Djpg%26w%3D1080%26fit%3Dmax%26s%3D3b9bc6caa190332e91472b6828a120a4">
+                        <img src="//splashbase.s3.amazonaws.com/unsplash/regular/photo-1433959352364-9314c5b6eb0b%3Fq%3D75%26fm%3Djpg%26w%3D1080%26fit%3Dmax%26s%3D3b9bc6caa190332e91472b6828a120a4" className="img-responsive" alt="Image 3"/>
+                        <div className="gallery-box-caption">
+                            <div className="gallery-box-content">
                                 <div>
-                                    <i class="icon-lg ion-ios-search"></i>
+                                    <i className="icon-lg ion-ios-search"></i>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-moto-drawing-illusion-nabeel-1440x960.jpg">
-                        <img src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-moto-drawing-illusion-nabeel-1440x960.jpg" class="img-responsive" alt="Image 4"/>
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
+                <div className="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
+                    <a href="#galleryModal" className="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-moto-drawing-illusion-nabeel-1440x960.jpg">
+                        <img src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-moto-drawing-illusion-nabeel-1440x960.jpg" className="img-responsive" alt="Image 4"/>
+                        <div className="gallery-box-caption">
+                            <div className="gallery-box-content">
                                 <div>
-                                    <i class="icon-lg ion-ios-search"></i>
+                                    <i className="icon-lg ion-ios-search"></i>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-new-york-crosswalk-nabeel-1440x960.jpg">
-                        <img src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-new-york-crosswalk-nabeel-1440x960.jpg" class="img-responsive" alt="Image 5" />
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
+                <div className="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
+                    <a href="#galleryModal" className="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-new-york-crosswalk-nabeel-1440x960.jpg">
+                        <img src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-new-york-crosswalk-nabeel-1440x960.jpg" className="img-responsive" alt="Image 5" />
+                        <div className="gallery-box-caption">
+                            <div className="gallery-box-content">
                                 <div>
-                                    <i class="icon-lg ion-ios-search"></i>
+                                    <i className="icon-lg ion-ios-search"></i>
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-clothes-exotic-travel-nabeel-1440x960.jpg">
-                        <img alt="Image 6"  class="img-responsive" src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-clothes-exotic-travel-nabeel-1440x960.jpg"  />
-                        <div class="gallery-box-caption">
-                            <div class="gallery-box-content">
+                <div className="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
+                    <a href="#galleryModal" className="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-clothes-exotic-travel-nabeel-1440x960.jpg">
+                        <img alt="Image 6"  className="img-responsive" src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-clothes-exotic-travel-nabeel-1440x960.jpg"  />
+                        <div className="gallery-box-caption">
+                            <div className="gallery-box-content">
                                 <div>
-                                    <i class="icon-lg ion-ios-search"></i>
+                                    <i className="icon-lg ion-ios-search"></i>
                                 </div>
                             </div>
                         </div>
@@ -85,11 +85,11 @@ const Gallaries = props => {
             </div>
         </div>
 
-        <div id="galleryModal" class="modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-lg animate__animated animate__jackInTheBox">
-        <div class="modal-content">
-        	<div class="modal-body">
-        		<img alt="modal" src="//placehold.it/1200x700/222?text=..." id="galleryImage" class="img-responsive" />
+        <div id="galleryModal" className="modal" tabIndex="-1" role="dialog" aria-hidden="true">
+        <div className="modal-dialog modal-lg animate__animated animate__jackInTheBox">
+        <div className="modal-content">
+        	<div className="modal-body">
+        		<img alt="modal" src="//placehold.it/1200x700/222?text=..." id="galleryImage" className="img-responsive" />
 
         	</div>
         </div>

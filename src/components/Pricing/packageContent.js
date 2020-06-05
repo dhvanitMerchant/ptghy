@@ -113,6 +113,12 @@ const packages = [
 
             }, {
                 service: 'All Photos in Softcopy'
+            },
+            {
+                service: 'All Photos in Softcopy'
+            },
+            {
+                service: 'All Photos in Softcopy'
             }
         ],
         price: '30,000'

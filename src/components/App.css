@@ -484,49 +484,60 @@ text-transform: uppercase;
 Scroll Down End
 **/
 
- 
 .container1 {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 10vmin;
-  overflow: hidden;
+  /* overflow: hidden; */
   transform: skew(5deg);
+}
+
+@media only screen and (max-width: 920px) {
+  .container1 {
+    flex-direction: column;
+    transform: skew(0deg);
+  }
 }
 .container1 .card {
   flex: 1;
   transition: all 1s ease-in-out;
-  height: 75vmin;
+  height: 60vmin;
   position: relative;
   background: rgba(71, 69, 69, 0.7);
+  margin-bottom: 1rem;
+  transition: flex 0.8s ease;
 }
 .container1 .card .card__head {
   color: black;
   background: rgba(255, 30, 173, 0.75);
   padding: 0.5em;
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg); */
   transform-origin: 0% 0%;
   transition: all 0.5s ease-in-out;
   min-width: 100%;
   text-align: center;
   position: absolute;
   bottom: 0;
-  left: 0;
+  /* left: 0; */
   font-size: 1em;
   white-space: nowrap;
+  margin-bottom: auto;
 }
+
+/* @media only screen and (max-width: 920px){
+  .container1 .card .card__head {
+    min-width: 50%;
+  }
+} */
 .container1 .card:hover {
-  flex-grow: 10;
+  flex: 15;
   visibility: visible;
 }
 
 .container1 .card:hover .card__head {
-  text-align: center;
-  top: calc(100% - 2em);
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
-  font-size: 2em;
-  transform: rotate(0deg) skew(-5deg);
+ visibility: hidden;
 }
 
 .container1 .card:not(:nth-child(9)) {
@@ -547,6 +558,8 @@ Scroll Down End
 .container1 .card:hover .package {
   filter: grayscale(0);
   visibility: visible;
+  height: auto;
+  flex: 20;
 }
  
  button {
@@ -586,7 +599,6 @@ Scroll Down End
   width: 100%;
 }
 
- 
 .progress-label {
   color: #000;
 	position: relative;
@@ -871,9 +883,6 @@ fieldset[disabled] .btn-default.active {
   background-color: transparent;
   border-color:transparent;
   border:transparent;
-
-
-
 }
 
 .btn {

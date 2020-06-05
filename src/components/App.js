@@ -18,9 +18,9 @@ import videoBack from '../images/videoBack2.gif'
 
 const Loading = () => 
 
-<div class="loading" delay-hide="000">
+<div className="loading" delay-hide="000">
   
-  <div class="load-text">
+  <div className="load-text">
   <img className='img-responsive' alt='logo' src={videoBack} />
   </div>
 

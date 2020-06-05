@@ -11,8 +11,8 @@ const Services = props => {
         <p className="separator" />
       </div>
 
-        <div class="row">
-          <div class="services col-lg-6 mx-auto">
+        <div className="row">
+          <div className="services col-lg-6 mx-auto">
 
             <span className="wow slideInUp" data-wow-delay=".5s">Wedding Photography<Progress done="90"/></span>
             <span className="wow slideInUp" data-wow-delay=".5s">Pre-Wedding Photography<Progress done="90"/></span>
@@ -23,7 +23,7 @@ const Services = props => {
             <span className="wow slideInUp" data-wow-delay=".5s">Meternity Photoshoot<Progress done="75"/></span>
             <span className="wow slideInUp" data-wow-delay=".5s">Product Photohoot<Progress done="70"/></span>
           </div>
-          <div class="col-lg-6 mx-auto">
+          <div className="col-lg-6 mx-auto">
               <div className="img"></div>
           </div>
         </div>
