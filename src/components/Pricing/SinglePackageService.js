@@ -1,5 +1,5 @@
 import React from 'react';
-import singlePackageService from './packageContent'
+// import singlePackageService from './packageContent'
 
 function SinglePackageService({singlePackageService}) {
     return (

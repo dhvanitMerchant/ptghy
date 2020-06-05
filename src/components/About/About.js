@@ -7,7 +7,7 @@ const About = props => {
             <div className="row">
                 <div className="col-lg-12 text-center wow animate__animated animate__fadeInUp"  data-wow-delay=".3s">
                 <h2 className="margin-top-0 text-light hvr-grow">
-                    <i class="fas fa-caret-left"></i>&nbsp; ABOUT &nbsp;<i class="fas fa-caret-right"></i>
+                    <i className="fas fa-caret-left"></i>&nbsp; ABOUT &nbsp;<i className="fas fa-caret-right"></i>
                 </h2>
                     <hr className="dark wow animate__animated animate__flash"  data-wow-delay=".3s" />
                 </div>
