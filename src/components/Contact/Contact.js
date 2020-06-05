@@ -7,7 +7,7 @@ import React from 'react';
 const Contact = props => {
   return (
     <section id="contact" className="text-light bg-dark">
-     <div class="container ">
+        <div class="container ">
             <div class="row ">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 className="margin-top-0 text-light headers">

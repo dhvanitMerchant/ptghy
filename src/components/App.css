@@ -542,7 +542,6 @@ Scroll Down End
   visibility: hidden;
   background-color: black;
   color: #fff;
-  text-align: center;
 }
 
 .container1 .card:hover .package {

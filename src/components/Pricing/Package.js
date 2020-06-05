@@ -1,67 +1,40 @@
 import React from 'react';
-// import SinglePackage from './SinglePackage'
 import packages from './packageContent'
 import SinglePackageService from './SinglePackageService';
 
 class Package extends React.Component {
-
-    
-
     render() {
-        const days = {
-            fontSize: '2rem'
-        }
-        const service = {
-            fontSize: '1rem'
-    
-        }
-
         return (
-            <section id="pricing" className="bg-dark aside">
-                <div className="col-lg-12 text-center wow slideInUp" data-wow-delay=".6s">
-                <h2 className="margin-top-0 text-light headers">
-                    <i class="fas fa-caret-left"></i>&nbsp; What we Have? &nbsp;<i class="fas fa-caret-right"></i>
-                </h2>
-                    <hr className="light"/>
+            <section id="pricing">
+                <div class="text-center">
+                    <h2 className="margin-top-0 text-light headers">
+                        <i class="fas fa-caret-left"></i>&nbsp; What We Offer? &nbsp;<i class="fas fa-caret-right"></i>
+                    </h2>
+                        <hr class="light"/>
                 </div>
-
-         
-
-                <div class="packageContainer ">
+                <div class="container1">
                     {packages.map((singlePackage, index) => {
                         return (
                             <div class="card">
-                                 {/* <img alt = 'land' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/False_alarm_-a.jpg/1280px-False_alarm_-a.jpg"/> */}
-                                <div class="conatiner">
-                                    <h1>{singlePackage.packageName}</h1>
-                                    <div style={days} className="desc">
-                                        Days: {singlePackage.days}
-
-                                        &nbsp; Rs {singlePackage.price}
-                                        /-
-                                    </div>
-                                    <div style={service} className="services">
-                                    <h3>Services</h3>
-                                        
-                                        {singlePackage
-                                            .services
-                                            .map((singlePackageService, i) => {
-                                                return (<SinglePackageService singlePackageService={singlePackageService}/>)
-                                            })
-}
-                                    <div class="card__head">{singlePackage.packageName}</div>
-                                    </div>
-
+                                <div class="card__head">{singlePackage.packageName}</div>
+                                <div class="package">
+                                    <h1 class="text-center">{singlePackage.packageName}</h1>
+                                    <p className="text-center">Days: {singlePackage.days}</p>
+                                    <p>Price: {singlePackage.price} -/</p>
+                                    <ul>
+                                        {singlePackage.services.map((singlePackageService, i) => {
+                                            return (<SinglePackageService singlePackageService={singlePackageService}/>)
+                                        })}
+                                    </ul>
                                 </div>
                             </div>
                         )
                     })}
-
                 </div>
-
             </section>
         );
     }
-}
+};
+
 
 export default Package;
