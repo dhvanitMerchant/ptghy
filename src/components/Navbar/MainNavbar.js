@@ -27,9 +27,9 @@ function MainNav() {
                     <li>
                         <a className="page-scroll hvr-underline-from-center" href="#about">About</a>
                     </li>
-                    <li id= "drop" class="dropdown  page-scroll">
-                    <a href="/" class="dropdown-toggle page-scoll hvr-underline-from-center" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
-                    <ul class="dropdown-menu page-scroll js-nav">
+                    <li id= "drop" className="dropdown  page-scroll">
+                    <a href="/" className="dropdown-toggle page-scoll hvr-underline-from-center" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
+                    <ul className="dropdown-menu page-scroll js-nav">
                         <li>
                         <Link to="/rituals" className="page-scroll hvr-underline-from-left">Rituals</Link>
                         </li>

@@ -1,10 +1,13 @@
 import React from 'react';
+// import singlePackageService from './packageContent'
 
 function SinglePackageService({singlePackageService}) {
     return (
-        <p>
-                {singlePackageService.service}
-        </p>
+        
+            <li>
+                    {singlePackageService.service}
+            </li>
+        
     )
 }
 

@@ -2,7 +2,7 @@ const packages = [
     {
         packageName: 'Package 1',
         isAvaialable: true,
-        days: 3,
+        days: 1,
         services: [
             {
                 service: 'One Photographer '
@@ -24,7 +24,7 @@ const packages = [
     }, {
         packageName: 'Package 2',
         isAvaialable: true,
-        days: 3,
+        days: 2,
         services: [
             {
                 service: 'One Photographer '
@@ -112,6 +112,12 @@ const packages = [
                 service: 'One Album Of 250-275 Selected Photos'
 
             }, {
+                service: 'All Photos in Softcopy'
+            },
+            {
+                service: 'All Photos in Softcopy'
+            },
+            {
                 service: 'All Photos in Softcopy'
             }
         ],
