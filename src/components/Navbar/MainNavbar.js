@@ -1,6 +1,6 @@
 import React from "react";
 import logo from '../images/whitelogo.png'
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
  // import SocialLinks from "../SocialLinks/SocialLinks";
 
 function MainNav() {
@@ -14,7 +14,7 @@ function MainNav() {
                     <span className="icon-bar"></span>
                     <span className="icon-bar"></span>
                 </button>
-                <a className="navbar-brand page-scroll" href="#welcome-section">
+                <a className="navbar-brand page-scroll" href="/">
                 <img width="120px" height="50px"  style={{position:'relative', top:'-10px'}} alt="logo" src={logo}/>
                     
                 </a>
@@ -22,7 +22,7 @@ function MainNav() {
             <div className="navbar-collapse collapse" id="bs-navbar">
                 <ul className="nav navbar-nav js-nav">
                     <li>
-                        <a className="page-scroll hvr-underline-from-center" href="#welcome-section">HOME</a>
+                        <Link className="page-scroll hvr-underline-from-center" to="/">HOME</Link>
                     </li>
                     <li>
                         <a className="page-scroll hvr-underline-from-center" href="#about">About</a>
@@ -48,6 +48,17 @@ function MainNav() {
                    
                     <li>
                         <a className="page-scroll hvr-underline-from-center" href="#services">Services</a>
+                    </li>
+                    <li>
+                    <Link className="page-scroll hvr-underline-from-center" to="/login">
+                          Login
+                    </Link>
+                  
+                    </li>
+                    <li>
+                          <Link className="page-scroll hvr-underline-from-center" to="/register">
+                          Register
+                    </Link>
                     </li>
                  
                 </ul>
