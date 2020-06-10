@@ -3,8 +3,9 @@ import React from 'react';
 function Rituals() {
 
     return (
-
-        <section id="rituals" className="bg-light no-padding">
+       
+        <section id="rituals" className="bg-dark">
+            
             <div className="col-lg-12 text-center wow slideInUp" data-wow-delay=".6s">
 
                 <h2 className="margin-top-0 text-light">
