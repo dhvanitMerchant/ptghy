@@ -950,10 +950,10 @@ img::-moz-selection {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 500px;
+  width: 400px;
   padding: 40px;
   transform: translate(-50%, -50%);
-  background: rgba(0,0,0,.5);
+  background: rgba(255,255,255,.15);
   box-sizing: border-box;
   box-shadow: 0 15px 25px white;
   border-radius: 10px;
@@ -1005,7 +1005,7 @@ img::-moz-selection {
   display: inline-block;
   padding: 10px 20px;
   color: #03e9f4;
-  font-size: 16px;
+  font-size: 12px;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
@@ -1017,7 +1017,7 @@ img::-moz-selection {
 .login-box .switchlabel a {
 
   color: #03e9f4;
-  font-size: 12px;
+  font-size: 10px;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;

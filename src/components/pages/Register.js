@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
+
 
 export class Register extends Component {
     render() {
@@ -9,6 +11,10 @@ export class Register extends Component {
                         <i class="fas fa-caret-left"></i>&nbsp; Register &nbsp;<i class="fas fa-caret-right"></i>
                     </h2>
                     <hr class="light"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                            <span></span>
                 </div>
                 <form>
 
@@ -28,20 +34,21 @@ export class Register extends Component {
                         <input type="text" name="" required=""/>
                         <label>Username</label>
                     </div>
-                    <div className="switchlabel">
-                        <a href="/login">
-                            Already Registered?
-                        </a>
-
-                    </div>
+                   
                     <div className="signup">
-                        <a href="/">
+                        <Link href="/">
                             <span></span>
                             <span></span>
                             <span></span>
                             <span></span>
                             Sign up
-                        </a>
+                        </Link>
+                    </div>
+                    <div className="switchlabel">
+                        <Link to="/login">
+                            Already Registered?
+                        </Link>
+
                     </div>
 
                 </form>
