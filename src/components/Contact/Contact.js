@@ -27,7 +27,7 @@ class Contact extends Component {
 			templateParams,
 			'user_LZpCELjZBVGE1nvhqLa6I'
 		).then((response) => {
-			ReactDOM.render(<div class="alert alert-success">
+			ReactDOM.render(<div className="alert alert-success">
 			<strong>Success! </strong>Your message has been sent successfully.</div>, document.getElementById('success'));
 			},
 			(error) => {

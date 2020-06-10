@@ -540,6 +540,15 @@ Scroll Down End
  visibility: hidden;
 }
 
+@media only screen and (max-width: 920px) {
+  .container1 .card .card__head {
+    visibility: visible;
+   }
+   .container1 .card:hover .card__head {
+    visibility: visible;
+   }
+}
+
 .container1 .card:not(:nth-child(9)) {
   margin-right: 1em;
 }
@@ -554,7 +563,12 @@ Scroll Down End
   background-color: black;
   color: #fff;
 }
-
+@media only screen and (max-width: 920px) {
+  .container1 .card .package {
+    visibility: visible;
+    height: auto;
+  }
+}
 .container1 .card:hover .package {
   filter: grayscale(0);
   visibility: visible;
