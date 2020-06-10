@@ -23,7 +23,7 @@ class Package extends React.Component {
 									<p>Price: {singlePackage.price} -/</p>
 									<ul>
 										{singlePackage.services.map((singlePackageService, i) => {
-												return (<SinglePackageService singlePackageService={singlePackageService}/>)
+											return (<SinglePackageService singlePackageService={singlePackageService}/>)
 										})}
 									</ul>
 								</div>
