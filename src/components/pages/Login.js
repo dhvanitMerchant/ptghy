@@ -7,12 +7,12 @@ import {Link} from 'react-router-dom'
 export class login extends Component {
     render() {
         return (
-                <div class="login-box">
+            <section className="login bg-light">
+                <div class="login-box ">
                     <div class=" text-center">
                         <h2 className="margin-top-0 text-light headers">
                             <i class="fas fa-caret-left"></i>&nbsp; Login &nbsp;<i class="fas fa-caret-right"></i>
                         </h2>
-                        <hr class="light"/>
                     </div>
                     <form>
                         <div class="user-box">
@@ -33,15 +33,15 @@ export class login extends Component {
                                 Login in
                             </a>
                         </div>
-                        <div className="switchlabel">
-                            <Link to="/register">
+                        <div className="switchlabel ">
+                            <Link to="/register" className="hvr-wobble-top">
                                 Create Account
                             </Link>
 
                         </div>
                     </form>
                 </div>
-
+                </section>
         )
     }
 }

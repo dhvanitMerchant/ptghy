@@ -5,13 +5,13 @@ import {Link} from 'react-router-dom'
 export class Register extends Component {
     render() {
         return (
+            <section className="login">
+
             <div className="login-box">
                 <div className=" text-center">
                     <h2 className="margin-top-0 text-light headers">
                         <i className="fas fa-caret-left"></i>&nbsp; Register &nbsp;<i className="fas fa-caret-right"></i>
                     </h2>
-                    <hr class="light"/>
-           
                 </div>
                 <form>
 
@@ -42,7 +42,7 @@ export class Register extends Component {
                         </Link>
                     </div>
                     <div className="switchlabel">
-                        <Link to="/login">
+                        <Link to="/login" className="hvr-wobble-top">
                             Already Registered?
                         </Link>
 
@@ -50,6 +50,7 @@ export class Register extends Component {
 
                 </form>
             </div>
+            </section>
 
         )
     }

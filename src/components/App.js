@@ -4,6 +4,7 @@ import React from 'react';
 import './App.css';
 import './Responsive.css'
 import './App.scss';
+import ScrollUpButton from "react-scroll-up-button";
 
 
 
@@ -19,6 +20,9 @@ export default function App() {
     <div className="App">
       <Routes />
       <MainNav />
+      <ScrollUpButton style={{
+                    padding: '5px'
+                }}/>
     </div>
   );
 }
