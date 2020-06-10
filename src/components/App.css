@@ -509,6 +509,11 @@ Scroll Down End
   margin-bottom: 1rem;
   transition: flex 0.8s ease;
 }
+@media only screen and (max-width: 920px) {
+  .container1 .card {
+    height: auto;
+  }
+}
 .container1 .card .card__head {
   color: black;
   background: rgba(255, 30, 173, 0.75);
