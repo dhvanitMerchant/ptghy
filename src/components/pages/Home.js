@@ -56,12 +56,6 @@ export class Home extends Component {
                     .slideUp();
             });
 
-     
- 
-
-         
-
-
             $('body').scrollspy({target: '.navbar-fixed-top', offset: 60});
 
             $('#topNav').affix({
@@ -102,8 +96,15 @@ export class Home extends Component {
                     }, 1450, 'none');
                 event.preventDefault();
             });
-
-          
+            $('.navbar-collapse ul li a').click(function() {
+                /* always close responsive nav after click */
+                $('.navbar-toggle:visible').click();
+              });
+            
+              $('.dropdown ul li Link').click(function() {
+                $('.dropdown-toggle:visible').click();
+              })
+              
             $('#galleryModal').on('show.bs.modal', function (e) {
                 $('#galleryImage').attr("src", $(e.relatedTarget).data("src"));
             });

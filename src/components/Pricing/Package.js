@@ -12,24 +12,28 @@ class Package extends React.Component {
 					</h2>
 					<hr className="light"/>
 				</div>
-				<div className="container1">
-					{packages.map((singlePackage, index) => {
-						return (
-							<div className="card">
-								<div className="card__head">{singlePackage.packageName}</div>
-								<div className="package">
-									<h1 className="text-center">{singlePackage.packageName}</h1>
-									<p className="text-center">Days: {singlePackage.days}</p>
-									<p>Price: {singlePackage.price} -/</p>
-									<ul>
-										{singlePackage.services.map((singlePackageService, i) => {
-											return (<SinglePackageService singlePackageService={singlePackageService}/>)
-										})}
-									</ul>
+				<div className="container">
+					<div className="row no-gutter">
+						{packages.map((singlePackage, index) => {
+							return (
+								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<div class="hovereffect">
+										<img class="img-responsive" src="//splashbase.s3.amazonaws.com/getrefe/regular/tumblr_nqune4OGHl1slhhf0o1_1280.jpg" alt="" />
+										<div class="overlay">
+											<h2>{singlePackage.packageName}</h2>
+											<p className="text-center small">Days: {singlePackage.days}<br />
+											Price: {singlePackage.price} -/</p>
+											<ul>
+												{singlePackage.services.map((singlePackageService, i) => {
+													return (<SinglePackageService singlePackageService={singlePackageService}/>)
+												})}
+											</ul>
+										</div>
+									</div>
 								</div>
-							</div>
-						)
-					})}
+							)
+						})}
+					</div>
 				</div>
 			</section>
 		);
