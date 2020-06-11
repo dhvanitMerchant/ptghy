@@ -1,9 +1,12 @@
 import React from "react";
 import logo from '../../images/whitelogo.png'
+
 import { Link } from "react-router-dom";
  // import SocialLinks from "../SocialLinks/SocialLinks";
 
 function MainNav() {
+    
+    
   return (
       
       <nav id="topNav" className="navbar navbar-default navbar-fixed-top">
@@ -16,7 +19,8 @@ function MainNav() {
                     <span className="icon-bar"></span>
                 </button>
                 <a className="navbar-brand page-scroll" href="/">
-                <img width="120px" height="50px"  style={{position:'relative', top:'-10px'}} alt="logo" src={logo}/>
+                   
+                <img id="logo" width="120px" height="50px"  style={{position:'relative', top:'-10px'}} alt="logo" src={logo}/>
                     
                 </a>
             </div>
