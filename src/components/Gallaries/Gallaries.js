@@ -8,7 +8,7 @@ const Gallaries = props => {
         <section id="gallaries" className="bg-light">
         <div className="container-fluid">
             <div className="row no-gutter">
-                <div className="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
+                <div className="col-lg-4 col-sm-6 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                     <a href="#galleryModal" className="gallery-box" data-toggle="modal" data-src={img1}>
                         <img src={img1} className="img-responsive" alt="Image 1"/>
                         <div className="gallery-box-caption">
@@ -20,7 +20,7 @@ const Gallaries = props => {
                         </div>
                     </a>
                 </div>
-                <div className="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
+                <div className="col-lg-4 col-sm-6 wow animate__animated animate__fadeInUp  " data-wow-delay=".3s">
                     <a href="#galleryModal" className="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/getrefe/regular/tumblr_nqune4OGHl1slhhf0o1_1280.jpg">
                         <img src="//splashbase.s3.amazonaws.com/getrefe/regular/tumblr_nqune4OGHl1slhhf0o1_1280.jpg" className="img-responsive" alt="Image 2"/>
                         <div className="gallery-box-caption">
@@ -32,7 +32,7 @@ const Gallaries = props => {
                         </div>
                     </a>
                 </div>
-                <div className="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
+                <div className="col-lg-4 col-sm-6 wow animate__animated animate__fadeInUp  " data-wow-delay=".3s">
                     <a href="#galleryModal" className="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/unsplash/regular/photo-1433959352364-9314c5b6eb0b%3Fq%3D75%26fm%3Djpg%26w%3D1080%26fit%3Dmax%26s%3D3b9bc6caa190332e91472b6828a120a4">
                         <img src="//splashbase.s3.amazonaws.com/unsplash/regular/photo-1433959352364-9314c5b6eb0b%3Fq%3D75%26fm%3Djpg%26w%3D1080%26fit%3Dmax%26s%3D3b9bc6caa190332e91472b6828a120a4" className="img-responsive" alt="Image 3"/>
                         <div className="gallery-box-caption">
@@ -44,7 +44,7 @@ const Gallaries = props => {
                         </div>
                     </a>
                 </div>
-                <div className="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
+                <div className="col-lg-4 col-sm-6 wow animate__animated animate__fadeInUp  " data-wow-delay=".3s">
                     <a href="#galleryModal" className="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-moto-drawing-illusion-nabeel-1440x960.jpg">
                         <img src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-moto-drawing-illusion-nabeel-1440x960.jpg" className="img-responsive" alt="Image 4"/>
                         <div className="gallery-box-caption">
@@ -56,7 +56,7 @@ const Gallaries = props => {
                         </div>
                     </a>
                 </div>
-                <div className="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
+                <div className="col-lg-4 col-sm-6 wow animate__animated animate__fadeInUp  " data-wow-delay=".3s">
                     <a href="#galleryModal" className="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-new-york-crosswalk-nabeel-1440x960.jpg">
                         <img src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-new-york-crosswalk-nabeel-1440x960.jpg" className="img-responsive" alt="Image 5" />
                         <div className="gallery-box-caption">
@@ -68,7 +68,7 @@ const Gallaries = props => {
                         </div>
                     </a>
                 </div>
-                <div className="col-lg-4 col-sm-6 wow animate__animated animate__jello animate_slow" data-wow-delay=".3s">
+                <div className="col-lg-4 col-sm-6 wow animate__animated animate__fadeInUp  " data-wow-delay=".3s">
                     <a href="#galleryModal" className="gallery-box" data-toggle="modal" data-src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-clothes-exotic-travel-nabeel-1440x960.jpg">
                         <img alt="Image 6"  className="img-responsive" src="//splashbase.s3.amazonaws.com/lifeofpix/regular/Life-of-Pix-free-stock-photos-clothes-exotic-travel-nabeel-1440x960.jpg"  />
                         <div className="gallery-box-caption">

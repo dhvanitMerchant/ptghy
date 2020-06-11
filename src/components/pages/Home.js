@@ -13,6 +13,7 @@ import Header from './Header';
 import Gallaries from '../Gallaries/Gallaries';
 import videoBack from '../../images/videoBack2.gif'
 
+
 const Loading = () => <div className="loading" delay-hide="000">
 
     <div className="load-text">
@@ -37,7 +38,7 @@ export class Home extends Component {
 
     componentDidMount() {
 
-        
+     
     
       
     //Collapse it the nav
@@ -86,7 +87,7 @@ export class Home extends Component {
                     document
                         .getElementById("topNav")
                         .style
-                        .top = "-70px";
+                        .top = "-80px";
                 }
                 prevScrollpos = currentScrollPos;
             }
