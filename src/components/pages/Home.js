@@ -11,7 +11,7 @@ import Contact from '../Contact/Contact';
 import Footer from './Footer';
 import Header from './Header';
 import Gallaries from '../Gallaries/Gallaries';
-import videoBack from '../images/videoBack2.gif'
+import videoBack from '../../images/videoBack2.gif'
 
 const Loading = () => <div className="loading" delay-hide="000">
 
@@ -30,7 +30,6 @@ export class Home extends Component {
                 <Gallaries/>
                 <Package/>
                 <Contact/>
-              
                 <Footer/>
             </div>
         )
@@ -38,10 +37,15 @@ export class Home extends Component {
 
     componentDidMount() {
 
-        //Collapse it the nav
-        $('.navbar-nav>li>a').on('click', function(){
-            $('.navbar-collapse').collapse('hide');
-        });
+        
+    
+      
+    //Collapse it the nav
+    $('ul.nav li.dropdown').hover(function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+      }, function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+      });
 
         $(document)
             .ready(function () {
@@ -51,8 +55,11 @@ export class Home extends Component {
                     .slideUp();
             });
 
-        (function ($) {
-           
+     
+ 
+
+         
+
 
             $('body').scrollspy({target: '.navbar-fixed-top', offset: 60});
 
@@ -95,16 +102,11 @@ export class Home extends Component {
                 event.preventDefault();
             });
 
-            $('.navbar-collapse ul li a').click(function () {
-                /* always close responsive nav after click */
-                $('.navbar-toggle:visible').click();
-            });
-
+          
             $('#galleryModal').on('show.bs.modal', function (e) {
                 $('#galleryImage').attr("src", $(e.relatedTarget).data("src"));
             });
 
-        })(jQuery);
 
     }
 
