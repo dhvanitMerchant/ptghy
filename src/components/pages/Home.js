@@ -1,7 +1,6 @@
 /* eslint-disable strict */
 /* eslint-disable no-undef */
 import React, {Component} from 'react'
-import ScrollUpButton from "react-scroll-up-button";
 import '../../components/App.css';
 import '../../components/App.css';
 import '../../components/App.scss';
@@ -12,7 +11,8 @@ import Contact from '../Contact/Contact';
 import Footer from './Footer';
 import Header from './Header';
 import Gallaries from '../Gallaries/Gallaries';
-import videoBack from '../images/videoBack2.gif'
+import videoBack from '../../images/videoBack2.gif'
+
 
 const Loading = () => <div className="loading" delay-hide="000">
 
@@ -31,15 +31,22 @@ export class Home extends Component {
                 <Gallaries/>
                 <Package/>
                 <Contact/>
-                <ScrollUpButton style={{
-                    padding: '5px'
-                }}/>
                 <Footer/>
             </div>
         )
     }
 
     componentDidMount() {
+
+     
+    
+      
+    //Collapse it the nav
+    $('ul.nav li.dropdown').hover(function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+      }, function() {
+        $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+      });
 
         $(document)
             .ready(function () {
@@ -48,18 +55,6 @@ export class Home extends Component {
                     .delay(loading.attr("delay-hide"))
                     .slideUp();
             });
-
-        (function ($) {
-            $('.js-nav Link')
-                .click(function (e) {
-                    e.preventDefault();
-                    $('body, html').animate({
-                        scrollTop: $($.attr(this, 'to'))
-                            .offset()
-                            .top
-                    }, 750);
-                });
-          
 
             $('body').scrollspy({target: '.navbar-fixed-top', offset: 60});
 
@@ -74,6 +69,22 @@ export class Home extends Component {
                     top: 200
                 }
             });
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function () {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document
+                        .getElementById("topNav")
+                        .style
+                        .top = "0";
+                } else {
+                    document
+                        .getElementById("topNav")
+                        .style
+                        .top = "-80px";
+                }
+                prevScrollpos = currentScrollPos;
+            }
             new WOW().init();
 
             $('a.page-scroll').bind('click', function (event) {
@@ -85,7 +96,6 @@ export class Home extends Component {
                     }, 1450, 'none');
                 event.preventDefault();
             });
-
             $('.navbar-collapse ul li a').click(function() {
                 /* always close responsive nav after click */
                 $('.navbar-toggle:visible').click();
@@ -95,12 +105,10 @@ export class Home extends Component {
                 $('.dropdown-toggle:visible').click();
               })
               
-
             $('#galleryModal').on('show.bs.modal', function (e) {
                 $('#galleryImage').attr("src", $(e.relatedTarget).data("src"));
             });
 
-        })(jQuery);
 
     }
 

@@ -9,6 +9,7 @@ import './App.scss';
 
 import Routes from './routes';
 import MainNav from './Navbar/MainNavbar';
+import ScrollToTop from './ScrollToTop';
 
 
 
@@ -19,6 +20,7 @@ export default function App() {
     <div className="App">
       <Routes />
       <MainNav />
+      <ScrollToTop />
     </div>
   );
 }

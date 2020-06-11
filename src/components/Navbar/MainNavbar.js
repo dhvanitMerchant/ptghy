@@ -1,10 +1,14 @@
 import React from "react";
-import logo from '../images/whitelogo.png'
+import logo from '../../images/whitelogo.png'
+
 import { Link } from "react-router-dom";
  // import SocialLinks from "../SocialLinks/SocialLinks";
 
 function MainNav() {
+    
+    
   return (
+      
       <nav id="topNav" className="navbar navbar-default navbar-fixed-top">
         <div className="container">
             <div className="navbar-header">
@@ -15,7 +19,8 @@ function MainNav() {
                     <span className="icon-bar"></span>
                 </button>
                 <a className="navbar-brand page-scroll" href="/">
-                <img width="120px" height="50px"  style={{position:'relative', top:'-10px'}} alt="logo" src={logo}/>
+                   
+                <img id="logo" width="120px" height="50px"  style={{position:'relative', top:'-10px'}} alt="logo" src={logo}/>
                     
                 </a>
             </div>
@@ -27,18 +32,35 @@ function MainNav() {
                     <li>
                         <a className="page-scroll hvr-underline-from-center" href="#about">About</a>
                     </li>
-                    <li id= "drop" className="dropdown  page-scroll">
-                    <a href="/" className="dropdown-toggle page-scoll hvr-underline-from-center" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery</a>
-                    <ul className="dropdown-menu page-scroll js-nav">
+      
+                    <li className="dropdown" >
+                    <a href="#gall" className="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">Gallery<b class="caret"></b></a>
+                    <ul className="dropdown-menu">
                         <li>
-                        <Link to="/rituals" className="page-scroll hvr-underline-from-left">Rituals</Link>
+                        <Link to="/rituals" className=" hvr-underline-from-left">Rituals</Link>
                         </li>
                         <li>
-                        <Link to="/rituals" className="page-scroll hvr-underline-from-left">Rituals</Link>
+                        <Link to="/engagement" className=" hvr-underline-from-left">Engagement</Link>
                         </li>
                         <li>
-                        <Link to="/rituals"className="page-scroll hvr-underline-from-left">Rituals</Link>
+                        <Link to="/event" className=" hvr-underline-from-left">Event</Link>
                         </li>
+                        <li>
+                        <Link to="/maternity" className=" hvr-underline-from-left">Maternity</Link>
+                        </li>
+                        <li>
+                        <Link to="/model" className=" hvr-underline-from-left">Model</Link>
+                        </li>
+                        <li>
+                        <Link to="/prewedding" className=" hvr-underline-from-left">Pre-Wedding</Link>
+                        </li>
+                        <li>
+                        <Link to="/wedding" className="hvr-underline-from-left">Wedding</Link>
+                        </li>
+                        <li>
+                        <Link to="/product" className=" hvr-underline-from-left">Product</Link>
+                        </li>
+   
                     </ul>
                     </li>
                    
