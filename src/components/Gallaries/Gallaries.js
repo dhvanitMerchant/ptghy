@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
-import img1 from '../images/headerImageRing.jpg'
+import img1 from '../../images/headerImageRing.jpg'
 
 
 const Gallaries = props => {

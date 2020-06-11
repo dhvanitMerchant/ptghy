@@ -1,6 +1,8 @@
 /** Responsive CSS 
 **/
 @media only screen and (max-width: 649px) {
+
+
   .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     color: white;
     background-color:transparent;
