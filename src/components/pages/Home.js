@@ -86,10 +86,15 @@ export class Home extends Component {
                 event.preventDefault();
             });
 
-            $('.navbar-collapse ul li a').click(function () {
+            $('.navbar-collapse ul li a').click(function() {
                 /* always close responsive nav after click */
                 $('.navbar-toggle:visible').click();
-            });
+              });
+            
+              $('.dropdown ul li Link').click(function() {
+                $('.dropdown-toggle:visible').click();
+              })
+              
 
             $('#galleryModal').on('show.bs.modal', function (e) {
                 $('#galleryImage').attr("src", $(e.relatedTarget).data("src"));
