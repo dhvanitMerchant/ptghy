@@ -108,6 +108,7 @@ class Contact extends Component {
 								<div className="col-md-4">
 									<label></label>
 									<select name="type" id="type" className="form-control" value={this.state.type} onChange={this.handleDropdownChange} placeholder="Select a service type">
+										<option value="default">Select your service...</option>
 										<option value="Wedding">Wedding</option>
 										<option value="Pre-Wedding">Pre-Wedding</option>
 										<option value="Engagement">Engagement</option>
