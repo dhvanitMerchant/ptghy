@@ -20,9 +20,8 @@ class Package extends React.Component {
 									<div class="hovereffect">
 										<img class="img-responsive" src={singlePackage.imgUrl} alt="" />
 										<div class="overlay">
-										
+										<h3>{singlePackage.packageName}</h3>
 											<p className="text-center small">
-											<h3>{singlePackage.packageName}</h3>
 											<h5>
 											Days: {singlePackage.days} &nbsp;
 											Price: {singlePackage.price} -/
