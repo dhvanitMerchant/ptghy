@@ -7,6 +7,16 @@ import * as emailjs from 'emailjs-com'
  ***********************/
 
 class Contact extends Component {
+
+	constructor(props) {
+		super(props);
+		this.state = {
+			
+		  type: ""
+		};
+	
+		this.handleDropdownChange = this.handleDropdownChange.bind(this);
+	  }
   state = {
 	email: '',
 	name: '',
@@ -15,6 +25,10 @@ class Contact extends Component {
 	date: '',
 	type: '',
   }
+  handleDropdownChange(e) {
+    this.setState({ type: e.target.value });
+  }
+
   handleSubmit(e) {
 		e.preventDefault()
 		const {email, name, number, city, date, type} = this.state
@@ -57,7 +71,10 @@ class Contact extends Component {
 		this.setState({ [param]: e.target.value })
 	}
 
+
 	render() {
+
+		
 		return (
 			<section id="contact" className="text-light bg-dark">
 				<div className="container ">
@@ -71,37 +88,41 @@ class Contact extends Component {
 						<div className="col-lg-10 col-lg-offset-1 text-center">
 						<div id="success" className="p-3"></div>
 							<form className="contact-form row" onSubmit={this.handleSubmit.bind(this)}>
-								<div className="col-md-12">
+							
+								<div className="col-md-6">
 									<label></label>
-									<input type="email" className="form-control" value={this.state.email} onChange={this.handleChange.bind(this, 'email')} placeholder="Email" required/>
+									<input type="text" className="form-control" value={this.state.name} onChange={this.handleChange.bind(this, 'name')} placeholder="Full Name" required/>
 								</div>
 								<div className="col-md-6">
 									<label></label>
-									<input type="text" className="form-control" value={this.state.name} onChange={this.handleChange.bind(this, 'name')} placeholder="Name" required/>
+									<input type="number" className="form-control" value={this.state.number} onChange={this.handleChange.bind(this, 'number')} placeholder="Phone" required/>
 								</div>
-								<div className="col-md-6">
-									<label></label>
-									<input type="text" className="form-control" value={this.state.number} onChange={this.handleChange.bind(this, 'number')} placeholder="Phone" required/>
-								</div>
-								<div className="col-md-6">
+								<div className="col-md-4">
 									<label></label>
 									<input type="text" className="form-control" value={this.state.city} onChange={this.handleChange.bind(this, 'city')} placeholder="Enter a city where you want Service " required/>
 								</div>
-								<div className="col-md-6">
+								<div className="col-md-4">
 									<label></label>
 									<input type="date" className="form-control" value={this.state.date} onChange={this.handleChange.bind(this, 'date')} placeholder="Enter a date When you want Service " required/>
 								</div>
-								<div className="col-md-12">
+								<div className="col-md-4">
 									<label></label>
-									<select name="type" className="form-control" value={this.state.type} onChange={this.handleChange.bind(this, 'type')} placeholder="Select a service type">
+									<select name="type" id="type" className="form-control" value={this.state.type} onChange={this.handleDropdownChange} placeholder="Select a service type">
 										<option value="Wedding">Wedding</option>
 										<option value="Pre-Wedding">Pre-Wedding</option>
 										<option value="Engagement">Engagement</option>
 									</select>
+								
+								<input type="text" className="hidden" value={this.state.type} onChange={this.handleChange.bind(this, 'type')}/>
+
 								</div>
-								<div className="col-md-4 col-md-offset-4">
+								<div className="col-md-12">
 									<label></label>
-									<button type="submit" id="submit" value="submit" className=" form-control btn btn-primary btn-lg text-light">Send</button>
+									<input type="email" className="form-control" value={this.state.email} onChange={this.handleChange.bind(this, 'email')} placeholder="Email" required/>
+								</div>
+								<div className="col-md-4 col-md-offset-4 ">
+									<label></label>
+									<button type="submit" id="submit" value="submit" className=" form-control hvr-reveal btn btn-primary btn-lg text-light">Send</button>
 								</div>
                 			</form>
 						</div>

@@ -18,7 +18,7 @@ class Package extends React.Component {
 							return (
 								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 									<div class="hovereffect">
-										<img class="img-responsive" src="//splashbase.s3.amazonaws.com/getrefe/regular/tumblr_nqune4OGHl1slhhf0o1_1280.jpg" alt="" />
+										<img class="img-responsive" src={singlePackage.imgUrl} alt="" />
 										<div class="overlay">
 											<h2>{singlePackage.packageName}</h2>
 											<p className="text-center small">Days: {singlePackage.days}<br />
