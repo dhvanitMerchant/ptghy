@@ -1057,9 +1057,11 @@ img::-moz-selection {
   overflow: hidden;
   position: relative;
   cursor: default;
-  background: #42b078;
+  /* background: #694731; */
 }
-
+.service {
+  font-size: 1.2em;
+}
 .hovereffect .overlay {
   width: 100%;
   height: 100%;
@@ -1097,7 +1099,7 @@ img::-moz-selection {
   display: block;
   position: relative;
   max-width: none;
-  width: calc(100% + 20px);
+  width: calc(100% + 50px);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(-10px,0,0);

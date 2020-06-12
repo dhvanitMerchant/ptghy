@@ -4,7 +4,7 @@ import React from 'react';
 function SinglePackageService({singlePackageService}) {
     return (
         
-            <li>
+            <li className="text-center" style={{listStyle:'none'}}>
                     {singlePackageService.service}
             </li>
         

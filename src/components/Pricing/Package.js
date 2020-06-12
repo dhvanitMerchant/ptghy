@@ -20,14 +20,20 @@ class Package extends React.Component {
 									<div class="hovereffect">
 										<img class="img-responsive" src={singlePackage.imgUrl} alt="" />
 										<div class="overlay">
-											<h2>{singlePackage.packageName}</h2>
-											<p className="text-center small">Days: {singlePackage.days}<br />
-											Price: {singlePackage.price} -/</p>
-											<ul>
+										
+											<p className="text-center small">
+											<h3>{singlePackage.packageName}</h3>
+											<h5>
+											Days: {singlePackage.days} &nbsp;
+											Price: {singlePackage.price} -/
+											</h5>
+											</p>
+											<ul class="service">
 												{singlePackage.services.map((singlePackageService, i) => {
 													return (<SinglePackageService singlePackageService={singlePackageService}/>)
 												})}
 											</ul>
+											
 										</div>
 									</div>
 								</div>
