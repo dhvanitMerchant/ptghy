@@ -1,16 +1,16 @@
 import React from 'react';
-import packages from './packageContent'
-import SinglePackageService from './SinglePackageService';
+import packages from './weddingContent'
+import SinglePackageService from '../SinglePackageService';
 
 class Package extends React.Component {
 	render() {
 		return (
-			<section id="pricing">
-				<div className="text-center">
+			<section id="wedding" className="backImage"> 
+				<div className="text-center wow animate__animated animate__fadeInUp"  data-wow-delay=".3s">
 					<h2 className="margin-top-0 text-light headers">
-						<i className="fas fa-caret-left"></i>&nbsp; What We Offer? &nbsp;<i className="fas fa-caret-right"></i>
+						<i className="fas fa-caret-left"></i>&nbsp; Wedding &nbsp;<i className="fas fa-caret-right"></i>
 					</h2>
-					<hr className="light"/>
+					<hr className="light wow animate__animated animate__flash"  data-wow-delay=".3s" />
 				</div>
 				<div className="container">
 					<div className="row no-gutter">

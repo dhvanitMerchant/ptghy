@@ -64,12 +64,9 @@ function MainNav() {
                     </ul>
                     </li>
                    
+            
                     <li>
-                        <a className="page-scroll hvr-underline-from-center" href="#pricing">Pricing</a>
-                    </li>
-                   
-                    <li>
-                        <a className="page-scroll hvr-underline-from-center" href="#services">Services</a>
+                        <a className="page-scroll hvr-underline-from-center" href="#offer">Services</a>
                     </li>
                     <li>
                     <Link className="page-scroll hvr-underline-from-center" to="/login">

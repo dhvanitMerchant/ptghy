@@ -79,11 +79,11 @@ class Contact extends Component {
 			<section id="contact" className="text-light bg-dark">
 				<div className="container ">
 					<div className="row ">
-						<div className="col-lg-8 col-lg-offset-2 text-center">
+						<div className="col-lg-8 col-lg-offset-2 text-center wow animate__animated animate__fadeInUp"  data-wow-delay=".3s">
 						<h2 className="margin-top-0 text-light headers">
 							<i className="fas fa-caret-left"></i>&nbsp; Get in Touch &nbsp;<i className="fas fa-caret-right"></i>
 						</h2>
-							<hr className="light"/>
+							<hr className="light wow animate__animated animate__flash"  data-wow-delay=".3s" />
 						</div>
 						<div className="col-lg-10 col-lg-offset-1 text-center">
 						<div id="success" className="p-3"></div>
