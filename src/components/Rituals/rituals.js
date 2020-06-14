@@ -4,7 +4,7 @@ function Rituals() {
 
     return (
        
-        <section id="rituals" className="bg-dark">
+        <section id="rituals" className="bg-dark backImage">
             
             <div className="col-lg-12 text-center wow slideInUp" data-wow-delay=".6s">
 

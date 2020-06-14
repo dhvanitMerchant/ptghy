@@ -6,12 +6,12 @@ import '../../components/App.css';
 import '../../components/App.scss';
 
 import About from '../About/About';
-import Package from '../Pricing/Package';
 import Contact from '../Contact/Contact';
 import Footer from './Footer';
 import Header from './Header';
-import Gallaries from '../Gallaries/Gallaries';
+// import Gallaries from '../Gallaries/Gallaries';
 import videoBack from '../../images/videoBack2.gif'
+import Offer from '../Pricing/Offer';
 
 
 const Loading = () => <div className="loading" delay-hide="000">
@@ -28,8 +28,7 @@ export class Home extends Component {
                 <Loading/>
                 <Header/>
                 <About/>
-                <Gallaries/>
-                <Package/>
+                <Offer/>
                 <Contact/>
                 <Footer/>
             </div>
