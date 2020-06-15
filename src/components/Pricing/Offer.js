@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 export class Offer extends Component {
     render() {
         return (
-            <section id="offer" className="bg-dark">
+            <aside id="offer" className="bg-dark">
 
                 <div class="container">
                     <div class="row flex-center sm-no-flex">
@@ -108,7 +108,7 @@ export class Offer extends Component {
                     </div>
 
                 </div>
-            </section>
+            </aside>
         )
     }
 }
