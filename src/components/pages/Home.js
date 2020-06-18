@@ -4,7 +4,6 @@ import React, {Component} from 'react'
 import '../../components/App.css';
 import '../../components/App.css';
 import '../../components/App.scss';
-
 import About from '../About/About';
 import Contact from '../Contact/Contact';
 import Footer from './Footer';
@@ -15,7 +14,6 @@ import Offer from '../Pricing/Offer';
 
 
 const Loading = () => <div className="loading" delay-hide="000">
-
     <div className="load-text">
         <img className='img-responsive' alt='logo' src={videoBack}/>
     </div>
@@ -36,11 +34,12 @@ export class Home extends Component {
     }
 
     componentDidMount() {
-
-     
-    
-      
     //Collapse it the nav
+    $('.navbar-collapse ul li a').click(function() {
+        /* always close responsive nav after click */
+        $('.navbar-toggle:visible').click();
+      });
+      
     $('ul.nav li.dropdown').hover(function() {
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
       }, function() {
@@ -95,10 +94,7 @@ export class Home extends Component {
                     }, 1450, 'none');
                 event.preventDefault();
             });
-            $('.navbar-collapse ul li a').click(function() {
-                /* always close responsive nav after click */
-                $('.navbar-toggle:visible').click();
-              });
+           
             
               $('.dropdown ul li Link').click(function() {
                 $('.dropdown-toggle:visible').click();
