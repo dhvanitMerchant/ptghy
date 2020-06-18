@@ -1,81 +1,48 @@
 import React from 'react';
+import packages from './PreWeddingContent'
+import SinglePackageService from '../SinglePackageService';
 
-
-const PreWedding = props => {
-  return (
-      <section id="pre">
-          <div className="g">
-            <p>1
-              <div>
-                <h1 className="text-center">Package 1</h1>
-                <h6>
-                  <li>One Photographer</li>
-                  <li>Best 15 Edited photos</li>
-                  <li>All Photos in Softcopy</li>
-                </h6>
-                <h4>Price: - /- </h4>
-              </div>
-            </p>
-            <p>2
-              <div>
-                <h1 className="text-center">Package 2</h1>
-                <h6>
-                  <li>One Cinematographer</li>
-                  <li>Up to 10-15 Min. Short Film</li>
-                  <li>Highlight Up To 2-3 Min.</li>
-                </h6>
-                <h4>Price: - /- </h4>
-              </div>
-            </p>
-            <p>3
-              <div>
-                <h1 className="text-center">Package 3</h1>
-                <h6>
-                  <li>One Photographer</li>
-                  <li>One Candid Photographer</li>
-                  <li>Best 25 Edited photos</li>
-                  <li>All Photos in Softcopy</li>
-                </h6>
-                Price: - /-
-              </div>
-            </p>
-            <p>4
-              <div>
-                <h1 className="text-center">Package 4</h1>
-                <h6>
-                  <li>One Photographer</li>
-                  <li>One Cinematographer</li>
-                  <li>Best 15 Edited photos</li>
-                  <li>Up to 10-15 Min. Short Film</li>
-                  <li>Highlight Up To 2-3 Min.</li>
-                  <li>All Photos in Softcopy</li>
-                </h6>
-                Price: - /-
-              </div>
-            </p>
-            <p>5
-              <div>
-                <h1 className="text-center">Package 5</h1>
-                <h4>(For One Day)</h4>
-                <h6>
-                  <li>One Photographer</li>
-                  <li>One Candid Photographer</li>
-                  <li>One Cinematographer</li>
-                  <li>Best 15 Edited photos</li>
-                  <li>Up to 10-15 Min. Short Film</li>
-                  <li>Highlight Up To 2-3 Min.</li>
-                  <li>All Photos in Softcopy</li>
-                </h6>
-                Price: - /-
-              </div>
-            </p>
-          </div>
-        <div className="article">
-            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit </h1>
-            <p>Duis tincidunt odio quis orci feugiat ultrices. Aliquam nec congue libero. Cras congue tellus consequat tortor lacinia fermentum eu placerat felis. Fusce condimentum ultrices pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                dignissim gravida enim. In sodales dolor sed nisl sagittis, in vehicula tellus rhoncus. Quisque in malesuada arcu. </p>
-        </div>
-      </section>
-  );
+class PreWedding extends React.Component {
+	render() {
+		return (
+			<section id="prewedding" className="backImage"> 
+				<div className="text-center wow animate__animated animate__fadeInUp"  data-wow-delay=".3s">
+					<h2 className="margin-top-0 text-light headers">
+						<i className="fas fa-caret-left"></i>&nbsp; Pre-Wedding &nbsp;<i className="fas fa-caret-right"></i>
+					</h2>
+					<hr className="light wow animate__animated animate__flash"  data-wow-delay=".3s" />
+				</div>
+				<div className="container">
+					<div className="row no-gutter">
+						{packages.map((singlePackage, index) => {
+							return (
+								<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<div className="hovereffect">
+										<img className="img-responsive" src={singlePackage.imgUrl} alt="" />
+										<div className="overlay">
+										<h3>{singlePackage.packageName}</h3>
+											<p className="text-center small">
+											<h5>
+											Price: {singlePackage.price} -/
+											</h5>
+											</p>
+											<ul className="service">
+												{singlePackage.services.map((singlePackageService, i) => {
+													return (<SinglePackageService singlePackageService={singlePackageService}/>)
+												})}
+											</ul>
+											
+										</div>
+									</div>
+								</div>
+							)
+						})}
+					</div>
+				</div>
+			</section>
+		);
+	}
 };
+
+
 export default PreWedding;

@@ -36,6 +36,12 @@ function MainNav() {
 									<Link to="/engagement" className=" hvr-underline-from-left">Engagement</Link>
 								</li>
 								<li>
+									<Link to="/prewedding" className=" hvr-underline-from-left">Pre-Wedding</Link>
+								</li>
+								<li>
+									<Link to="/wedding" className="hvr-underline-from-left">Wedding</Link>
+								</li>
+								<li>
 									<Link to="/event" className=" hvr-underline-from-left">Event</Link>
 								</li>
 								<li>
@@ -43,12 +49,6 @@ function MainNav() {
 								</li>
 								<li>
 									<Link to="/model" className=" hvr-underline-from-left">Model</Link>
-								</li>
-								<li>
-									<Link to="/prewedding" className=" hvr-underline-from-left">Pre-Wedding</Link>
-								</li>
-								<li>
-									<Link to="/wedding" className="hvr-underline-from-left">Wedding</Link>
 								</li>
 								<li>
 									<Link to="/product" className=" hvr-underline-from-left">Product</Link>

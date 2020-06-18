@@ -5,10 +5,7 @@ import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Rituals from "./Rituals/rituals";
 import Wedding from "./Wedding/WeddingPackage";
-
-
-
-
+import PreWedding from "./prewedding/prewedding";
 
 function Routes() {
   return (
@@ -18,11 +15,7 @@ function Routes() {
       <Route  path="/register" component={Register} />
       <Route  path="/rituals" component={Rituals} />
       <Route  path="/wedding" component={Wedding} />
-
-     
-
-      
-
+      <Route  path="/prewedding" component={PreWedding} />
     </Switch>
   );
 }
