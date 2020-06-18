@@ -16,10 +16,10 @@ class Package extends React.Component {
 					<div className="row no-gutter">
 						{packages.map((singlePackage, index) => {
 							return (
-								<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									<div class="hovereffect">
-										<img class="img-responsive" src={singlePackage.imgUrl} alt="" />
-										<div class="overlay">
+								<div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<div className="hovereffect">
+										<img className="img-responsive" src={singlePackage.imgUrl} alt="" />
+										<div className="overlay">
 										<h3>{singlePackage.packageName}</h3>
 											<p className="text-center small">
 											<h5>
@@ -27,7 +27,7 @@ class Package extends React.Component {
 											Price: {singlePackage.price} -/
 											</h5>
 											</p>
-											<ul class="service">
+											<ul className="service">
 												{singlePackage.services.map((singlePackageService, i) => {
 													return (<SinglePackageService singlePackageService={singlePackageService}/>)
 												})}
