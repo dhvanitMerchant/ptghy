@@ -3,7 +3,7 @@ const packages = [
         packageName: 'Wedding Package 1',
         isAvaialable: true,
         days: 1,
-        imgUrl: "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/033A0178.jpg?alt=media&token=144895be-7b28-40bc-ba47-48e1402e32c2",
+        imgUrl: "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/wedding%2F033A2162.jpg?alt=media&token=8c341926-f4b9-4fe4-a919-f113a6e29a20",
         services: [
             {
                 service: 'One Photographer '
