@@ -6,6 +6,7 @@ import Register from "./pages/Register";
 import Rituals from "./Rituals/rituals";
 import Wedding from "./Wedding/WeddingPackage";
 import PreWedding from "./prewedding/prewedding";
+import Engagement from "./engagement/engagement";
 
 function Routes() {
   return (
@@ -14,6 +15,7 @@ function Routes() {
       <Route  path="/login" component={Login} />
       <Route  path="/register" component={Register} />
       <Route  path="/rituals" component={Rituals} />
+      <Route  path="/engagement" component={Engagement} />
       <Route  path="/wedding" component={Wedding} />
       <Route  path="/prewedding" component={PreWedding} />
     </Switch>

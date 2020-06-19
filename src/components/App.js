@@ -7,6 +7,7 @@ import './App.scss';
 import Routes from './routes';
 import MainNav from './Navbar/MainNavbar';
 import ScrollToTop from './ScrollToTop';
+import Footer from './pages/Footer'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Routes />
       <MainNav />
       <ScrollToTop />
+      <Footer />
     </div>
   );
 }
