@@ -18,7 +18,7 @@ class Engagement extends React.Component {
                         <div className="col-lg-6">
                             <figure class="snip1321"><img src={singlePackage.imgUrl} alt="sq-sample26"/>
                                 <figcaption>
-                                    <h2>{singlePackage.packageName}</h2>
+                                    <h3>{singlePackage.packageName}</h3>
                                     <p>price: {singlePackage.price}/-</p>
                                     <ul className="service">
                                         {singlePackage.services.map((singlePackageService, i) => {

@@ -10,15 +10,7 @@ const packages = [
                 service: 'One Cinematographer '
             }, {
                 service: 'Highlight Up To 2-3 Min.'
-            }, {
-                service: 'Up to One Hour Short Film'
-            }, {
-                service: 'Calendar/Mini Book '
-            }, {
-                service: 'One Album Of 250-275 Selected Photos'
-            }, {
-                service: 'All Photos in Softcopy'
-            }
+            },
         ],
         price: '30,000'
     }, {
@@ -36,11 +28,7 @@ const packages = [
                 service: 'Up to One Hour Short Film'
             }, {
                 service: 'Calendar/Mini Book '
-            }, {
-                service: 'One Album Of 250-275 Selected Photos'
-            }, {
-                service: 'All Photos in Softcopy'
-            }
+            }, 
         ],
         price: '30,000'
     },
