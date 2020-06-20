@@ -15,7 +15,7 @@ class Engagement extends React.Component {
                 <div className="container">
                 {packages.map((singlePackage, index) => {
                     return (
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <figure class="snip1321"><img src={singlePackage.imgUrl} alt="sq-sample26"/>
                                 <figcaption>
                                     <h3>{singlePackage.packageName}</h3>
