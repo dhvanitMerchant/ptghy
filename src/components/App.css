@@ -1408,12 +1408,19 @@ figure.snip1321 {
   position: relative;
   overflow: hidden;
   margin: 10px;
-  max-width: 95%;
+  max-width: 90%;
+  min-width: 50%;
+  /* max-width: 315px; */
   width: 100%;
   color: #000000;
   text-align: center;
   -webkit-perspective: 50em;
   perspective: 50em;
+}
+figure.snip1321 img {
+  height: 40vh;
+  width: 100%;
+  align-items: center;
 }
 figure.snip1321 * {
   -webkit-box-sizing: padding-box;
@@ -1421,10 +1428,10 @@ figure.snip1321 * {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-figure.snip1321 img {
+/* figure.snip1321 img {
   max-width: 100%;
   vertical-align: top;
-}
+} */
 figure.snip1321 figcaption {
   top: 50%;
   left: 20px;
@@ -1486,4 +1493,8 @@ figure.snip1321.hover:after {
   -webkit-transform: rotateX(0);
   transform: rotateX(0);
   opacity: 0.9;
+}
+
+ul {
+  padding: 0;
 }
