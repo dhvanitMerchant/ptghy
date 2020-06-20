@@ -6,7 +6,6 @@ import '../../components/App.css';
 import '../../components/App.scss';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
-import Footer from './Footer';
 import Header from './Header';
 // import Gallaries from '../Gallaries/Gallaries';
 import videoBack from '../../images/videoBack2.gif'
@@ -28,7 +27,6 @@ export class Home extends Component {
                 <About/>
                 <Offer/>
                 <Contact/>
-                <Footer/>
             </div>
         )
     }
