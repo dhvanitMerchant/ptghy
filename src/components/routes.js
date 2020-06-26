@@ -7,6 +7,7 @@ import Rituals from "./Rituals/rituals";
 import Wedding from "./Wedding/WeddingPackage";
 import PreWedding from "./prewedding/prewedding";
 import Engagement from "./engagement/engagement";
+import Event from "./events/events";
 
 function Routes() {
   return (
@@ -18,6 +19,7 @@ function Routes() {
       <Route  path="/engagement" component={Engagement} />
       <Route  path="/wedding" component={Wedding} />
       <Route  path="/prewedding" component={PreWedding} />
+      <Route path="/event" component={Event} />
     </Switch>
   );
 }
