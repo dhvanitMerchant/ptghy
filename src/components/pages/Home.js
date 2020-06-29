@@ -44,6 +44,10 @@ export class Home extends Component {
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
       });
 
+    //   $(function () {
+    //     $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+    // });
+
         $(document)
             .ready(function () {
                 var loading = $(".loading");

@@ -1,12 +1,48 @@
-const images = [
-    "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/wedding%2F033A2162.jpg?alt=media&token=8c341926-f4b9-4fe4-a919-f113a6e29a20",
-    "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/033A2305-2.jpg?alt=media&token=b045bf6f-1aae-44f6-b95d-8a3df00beb9e",
-    "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/033A2057.jpg?alt=media&token=45258f58-5222-4fe3-aa89-f3143481cb4e",
-    "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/033A0834-01.jpg?alt=media&token=5ae61191-588a-4a26-8f88-344cc0f7f0f9",
-    "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/033A0827.jpg?alt=media&token=e23e8674-a2ac-4bac-b297-f1cdd0cd05aa",
-    "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/033A0739.jpg?alt=media&token=41dd4405-114f-497d-8ece-81954fabadeb",
-    "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/033A0617.jpg?alt=media&token=849dd9dc-d8c4-4088-8540-cd3d30c1ffac",
-    "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/033A0458.jpg?alt=media&token=a4f3d52a-042c-44d0-8357-823c976c9f98",
+const eventPhotos = [
+    {
+        packageName: 'Event 1',
+        isAvaialable: true,
+        imgUrl: "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/event%2F_DSC0173-01.jpg?alt=media&token=5ebd19c9-3fab-4f2e-bda7-d1b034a91798",
+    },{
+        packageName: 'Event 2',
+        isAvaialable: true,
+        imgUrl: "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/event%2F_DSC0274-01.jpg?alt=media&token=1e0a6f75-f170-4ebd-a45d-2476ca92b06f",
+
+    },{
+        packageName: 'Event 3',
+        isAvaialable: true,
+        imgUrl: "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/event%2F_DSC0359-01.jpg?alt=media&token=65758bca-1b19-4d25-a153-b8c78d9350c3",
+
+    },{
+        packageName: 'Event 4',
+        isAvaialable: true,
+        imgUrl: "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/event%2F_DSC0384-01.jpg?alt=media&token=9c99896e-e43d-4bba-84a3-60e1106534bd",
+    },{
+        packageName: 'Event 5',
+        isAvaialable: true,
+        imgUrl: "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/event%2F_DSC0507-01.jpg?alt=media&token=be1b7720-8eed-4667-afd0-15abafcb8e0a",
+    },{
+        packageName: 'Event 6',
+        isAvaialable: true,
+        imgUrl: "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/event%2F_DSC0514-01.jpg?alt=media&token=2e499106-f34c-4544-8207-84b93f327b5c",
+    },{
+        packageName: 'Event 7',
+        isAvaialable: true,
+        imgUrl: "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/event%2F_DSC0559-01.jpg?alt=media&token=842d0d3b-89a4-4038-9cfd-22efab2bd606",
+    },{
+        packageName: 'Event 8',
+        isAvaialable: true,
+        imgUrl: "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/event%2F_DSC0562-01.jpg?alt=media&token=3a26bd1a-cab9-4a29-b40b-515186ea23ee",
+    },{
+        packageName: 'Event 9',
+        isAvaialable: true,
+        imgUrl: "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/event%2F_DSC0580-01.jpg?alt=media&token=e52e7f19-e0b3-48b9-8535-6faca1537d7c",
+    },{
+        packageName: 'Event 10',
+        isAvaialable: true,
+        imgUrl: "https://console.firebase.google.com/u/3/project/photography-2404/storage/photography-2404.appspot.com/files~2Fevent",
+    },
 ];
 
-export default images
+
+export default eventPhotos;
