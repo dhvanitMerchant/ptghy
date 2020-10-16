@@ -95,7 +95,7 @@ class Contact extends Component {
 								</div>
 								<div className="col-md-6">
 									<label></label>
-									<input type="number" className="form-control" value={this.state.number} onChange={this.handleChange.bind(this, 'number')} placeholder="Phone" required/>
+									<input type="text" className="form-control" value={this.state.number} onChange={this.handleChange.bind(this, 'number')} maxLength='10' pattern="\d+"  placeholder="Phone" required/>
 								</div>
 								<div className="col-md-4">
 									<label></label>

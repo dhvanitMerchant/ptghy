@@ -47,6 +47,7 @@ export class Offer extends Component {
 
                                     <div className="member-details">
                                         <div className="wow animate__animated animate__flipInX " data-wow-delay=".5s">
+                                        <Link to='/engagement'>
                                             <img
                                                 src="https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/services%2F033A0839.jpg?alt=media&token=9cc38709-864c-461f-80a1-13c825f5bb66"
                                                 alt="Photography"/>
@@ -54,6 +55,7 @@ export class Offer extends Component {
                                                 <h3>Engagement</h3>
                                                 <p>Photography</p>
                                             </div>
+                                            </Link>
                                         </div>
                                     </div>
 
@@ -74,6 +76,8 @@ export class Offer extends Component {
                                 <li className="clearfix">
                                     <div className="member-details">
                                         <div className="wow animate__animated animate__flipInX " data-wow-delay=".9s">
+                                        <Link to='/event'>
+
                                             <img
                                             src="https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/services%2F_DSC0711-01.jpg?alt=media&token=96bafc0e-3bb6-4d8a-bc9e-a5c0e1a2d1a0"
                                                 alt="Photography"/>
@@ -81,6 +85,7 @@ export class Offer extends Component {
                                                 <h3>Event/Concert</h3>
                                                 <p>Photography</p>
                                             </div>
+                                            </Link>
                                         </div>
                                     </div>
 

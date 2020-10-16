@@ -40,7 +40,7 @@ const eventPhotos = [
     },{
         packageName: 'Event 10',
         isAvaialable: true,
-        imgUrl: "https://console.firebase.google.com/u/3/project/photography-2404/storage/photography-2404.appspot.com/files~2Fevent",
+        imgUrl: "https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/event%2F_DSC0711-01.jpg?alt=media&token=921c4b0a-b094-41e9-bd03-39658e1ced3e",
     },
 ];
 

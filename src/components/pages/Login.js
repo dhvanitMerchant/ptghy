@@ -30,7 +30,7 @@ export class login extends Component {
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                                Login in
+                                Login in 
                             </a>
                         </div>
                         <div className="switchlabel ">

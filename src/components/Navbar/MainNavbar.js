@@ -58,12 +58,12 @@ function MainNav() {
 						<li>
 							<a className="page-scroll hvr-underline-from-center" href="#offer">Services</a>
 						</li>
-						<li>
+						{/* <li>
 							<Link className="page-scroll hvr-underline-from-center" to="/login">Login</Link>
 						</li>
 						<li>
 							<Link className="page-scroll hvr-underline-from-center" to="/register">Register</Link>
-						</li>
+						</li> */}
 					</ul>
 					<ul className="nav js-nav navbar-nav navbar-right ">
 						<li>
