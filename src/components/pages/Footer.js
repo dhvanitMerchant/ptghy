@@ -17,6 +17,12 @@ export default function NewFooter() {
                     <ul className="list-unstyled">
                         <li><a href="#packages">Products</a></li>
                         <li><a href="#services">Services</a></li>
+                        <li>
+                        <a href="/images/CATALOUGE.pdf" download>
+                            Catalouge
+                        </a>
+                        </li>
+
                     </ul>
                 </div>
                 <div className="col-xs-12 col-sm-3 column">
