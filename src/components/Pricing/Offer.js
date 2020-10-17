@@ -30,6 +30,8 @@ export class Offer extends Component {
 
                                     <div className="member-details">
                                         <div className="wow animate__animated animate__flipInX " data-wow-delay=".3s">
+                                        <Link to='/prewedding'>
+
                                             <img
                                             src="https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/services%2F033A9598.jpg?alt=media&token=db0a859f-8562-48ec-b6a3-06f943f15d9b"
 
@@ -38,6 +40,7 @@ export class Offer extends Component {
                                                 <h3>Pre-Wedding</h3>
                                                 <p>Photography</p>
                                             </div>
+                                            </Link>
                                         </div>
                                     </div>
 
