@@ -105,6 +105,10 @@ p {
     color: rgba(245,245,245,0.7);
 }
 
+.close{
+  color: white;
+  opacity: 1;
+}
 .text-dark {
     color: #fff;
 }
@@ -1204,7 +1208,7 @@ img::-moz-selection {
 /**What we offer**/
 /*  Team Starts */
 .team-members {
-  transform: rotate(-45deg);
+  transform: rotate(-90deg);
   color: #222;
   
 }
@@ -1229,7 +1233,7 @@ img::-moz-selection {
 	margin: 5px;
 }
 .member-details img {
-	transform: rotate(45deg) translate(0, 15px) scale(1.2);
+	transform: rotate(90deg) translate(0, 15px) scale(1.3);
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -1243,8 +1247,9 @@ img::-moz-selection {
 
 .member-info {
 	position: absolute;
-	top: 50%;
-	transform: rotate(45deg) translate(-12px, 15px);
+  top: 50%;
+  
+	transform: rotate(90deg) translate(45px, 45px);
 	left: 0;
 	right: 0;
 	z-index: 2;

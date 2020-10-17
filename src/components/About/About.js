@@ -25,7 +25,7 @@ const About = props => {
                 </div>
                 <div className="col-md-8">
                 
-                <p className="wow animate__animated animate__fadeInUp" data-wow-delay=".5s">Moments is ran by Krunal Sonagara the one holding the camera rasied in Baroda. I offer weddings, engagements, family session and more.I have been working since the day where I can't imagine doing anything else but photography and pursued an impressive portfolio.</p>
+                <p className="wow animate__animated animate__fadeInUp" data-wow-delay=".5s">Moments is ran by Krunal Sonagara the one holding the camera rasied in Baroda. I offer weddings, engagements, family photogrphy sessions and more.I have been working since the day where I can't imagine doing anything else but photography and pursued an impressive portfolio.</p>
                 <p className="wow animate__animated animate__fadeInUp" data-wow-delay=".5s">If you really want to know in a nutshell, please allow me to help you show my success stories by clicking on the heart </p>
                 <a href={catalogue} download>
                <div class="heart wow animate__animated animate__fadeInUp"  data-wow-delay=".5s"></div>

@@ -8,6 +8,9 @@ import Wedding from "./Wedding/WeddingPackage";
 import PreWedding from "./prewedding/prewedding";
 import Engagement from "./engagement/engagement";
 import Event from "./events/events";
+import Privacy from "./Privacy/Privacy";
+import Contact from "./Contact/Contact";
+import Offer from "./Pricing/Offer";
 
 function Routes() {
   return (
@@ -20,6 +23,11 @@ function Routes() {
       <Route  path="/wedding" component={Wedding} />
       <Route  path="/prewedding" component={PreWedding} />
       <Route path="/event" component={Event} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/offer" component={Offer} />
+
+      <Route path="/privacy-policy" component={Privacy} />
+
     </Switch>
   );
 }
