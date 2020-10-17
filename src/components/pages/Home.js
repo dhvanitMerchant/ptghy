@@ -10,7 +10,8 @@ import Header from './Header';
 // import Gallaries from '../Gallaries/Gallaries';
 import videoBack from '../../images/videoBack2.gif'
 import Offer from '../Pricing/Offer';
-
+import CookieConsent from "react-cookie-consent";
+import { Link } from 'react-router-dom';
 
 const Loading = () => <div className="loading" delay-hide="000">
     <div className="load-text">
@@ -18,20 +19,36 @@ const Loading = () => <div className="loading" delay-hide="000">
     </div>
 
 </div>
+
+
 export class Home extends Component {
     render() {
         return (
             <div>
+
                 <Loading/>
                 <Header/>
                 <About/>
                 <Offer/>
                 <Contact/>
+                <CookieConsent
+  location="bottom"
+  buttonText="Accept Cookies !!"
+  cookieName="moments"
+  style={{ background: "#2B373B" }}
+  buttonClasses="btn btn-dark"
+  overlay
+  expires={150}
+>
+  This website uses cookies to enhance the user experience.{" "}
+  <span style={{ fontSize: "10px" }}><Link to="privacy-policy">Learn More</Link></span>
+</CookieConsent>
             </div>
         )
     }
 
     componentDidMount() {
+        
     //Collapse it the nav
     $('.navbar-collapse ul li a').click(function() {
         /* always close responsive nav after click */
@@ -44,16 +61,20 @@ export class Home extends Component {
         $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
       });
 
+
     //   $(function () {
     //     $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
     // });
 
         $(document)
             .ready(function () {
+             
                 var loading = $(".loading");
                 loading
                     .delay(loading.attr("delay-hide"))
                     .slideUp();
+
+                    
             });
 
             $('body').scrollspy({target: '.navbar-fixed-top', offset: 60});
