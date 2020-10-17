@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Privacy from '../Privacy/Privacy';
 import SocialLinks from '../SocialLinks/SocialLinks';
 
 export default function NewFooter() {
