@@ -1647,3 +1647,86 @@ Heart
   border-radius: 5px;
   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+/**
+BLACK AND WHITE GRID
+*/
+
+ul.fotos{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+ul.fotos li{
+  list-style-position: inside;
+  display: inline-block;
+  width: 200px;
+  height: 150px;
+  margin-top: -150px;
+}
+
+
+
+ul.fotos li.photo1{
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/event%2F_DSC0507-01.jpg?alt=media&token=be1b7720-8eed-4667-afd0-15abafcb8e0a);
+  background-position: center;
+  background-size: 120%;
+  background-repeat:no-repeat;
+  text-indent: -1000%;
+  animation: flip 4s 3s infinite;
+}
+ul.fotos li.photo2{
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/wedding%2F033A0402.jpg?alt=media&token=5a44d7a0-7193-49dc-9e40-3a1e31e20f99);
+  background-position: center;
+  background-size: 120%;
+  background-repeat:no-repeat;
+  text-indent: -1000%;
+  animation: flip 3s 2s infinite;
+}
+ul.fotos li.photo3{
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/model%2F033A3374-03.jpg?alt=media&token=422df8df-489f-4897-8034-19a6af7a63a3);
+  background-position: center;
+  background-size: 120%;
+  background-repeat:no-repeat;
+  text-indent: -1000%;
+  animation: flip 4s 1s infinite;
+} 
+ul.fotos li.photo4{
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/model%2F033A7663-01.jpg?alt=media&token=d718d3f9-1d5e-47bd-bcb6-72b713f4e6e6);
+  background-position: center;
+  background-size: 120%;
+  background-repeat:no-repeat;
+  text-indent: -1000%;
+  animation: flip 4s 3s infinite;
+}
+ul.fotos li.photo5{
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/model%2F033A8219-01.jpg?alt=media&token=b9421fef-fa82-489b-8118-6bbf46537a64);
+  background-position: center;
+  background-size: 120%;
+  background-repeat:no-repeat;
+  text-indent: -1000%;
+  animation: flip 3s 2s infinite;
+}
+ul.fotos li.photo6{
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/photography-2404.appspot.com/o/wedding%2F033A0368.jpg?alt=media&token=08fd4100-7bd5-4c9d-ac25-c517a78644b4);
+  background-position: center;
+  background-size: 120%;
+  background-repeat:no-repeat;
+  text-indent: -1000%;
+  animation: flip 4s 1s infinite;
+} 
+@keyframes flip{
+  0%{
+    transform: scale(.5);
+    opacity: 0;
+      }
+  50%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(.5);
+    opacity: 0;
+    }
+}

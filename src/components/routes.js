@@ -11,6 +11,7 @@ import Event from "./events/events";
 import Privacy from "./Privacy/Privacy";
 import Contact from "./Contact/Contact";
 import Offer from "./Pricing/Offer";
+import Blackwhite from "./BlackWhite/blackwhite";
 
 function Routes() {
   return (
@@ -25,7 +26,7 @@ function Routes() {
       <Route path="/event" component={Event} />
       <Route path="/contact" component={Contact} />
       <Route path="/offer" component={Offer} />
-
+      <Route path="/blackwhite" component={Blackwhite} />
       <Route path="/privacy-policy" component={Privacy} />
 
     </Switch>

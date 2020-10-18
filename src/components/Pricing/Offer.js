@@ -110,13 +110,23 @@ export class Offer extends Component {
                                 </li>
 
                             </ul>
+                            
                         </div>
-
+  
                      
                     </div>
-
+                    <div className="col-lg-12 text-center wow animate__animated animate__fadeInUp"  data-wow-delay=".3s">
+                        
+        <h2 className="margin-top-0 text-light hvr-grow">
+            <i className="fas fa-heart"></i>&nbsp; We also offer Black N White shots!! &nbsp;<i className="fas fa-heart"></i>
+       
+        </h2>
+        
+        </div>
                 </div>
+                
             </aside>
+
         )
     }
 }

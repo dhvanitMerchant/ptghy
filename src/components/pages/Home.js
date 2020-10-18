@@ -10,8 +10,10 @@ import Header from './Header';
 // import Gallaries from '../Gallaries/Gallaries';
 import videoBack from '../../images/videoBack2.gif'
 import Offer from '../Pricing/Offer';
+
 import CookieConsent from "react-cookie-consent";
 import { Link } from 'react-router-dom';
+import Blackwhite from '../BlackWhite/blackwhite';
 
 const Loading = () => <div className="loading" delay-hide="000">
     <div className="load-text">
@@ -30,6 +32,7 @@ export class Home extends Component {
                 <Header/>
                 <About/>
                 <Offer/>
+                <Blackwhite/>
                 <Contact/>
                 <CookieConsent
   location="bottom"
